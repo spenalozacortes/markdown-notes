@@ -716,8 +716,3 @@ console.log('Your number + 4 =');
 console.log(Number(num) + 4);
 ```
 
-
-# Cheatsheets
-
-## Back-End JavaScript with Node.js
-![[backend_javascript_with_nodejs.pdf]]

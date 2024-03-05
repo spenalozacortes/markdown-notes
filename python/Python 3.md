@@ -2629,35 +2629,3 @@ print(argus)
 # prints "Argus Filch"
 ```
  
-
-# Cheatsheets
-
-## Hello World
-![[python_hello_world.pdf]]
-
-## Control Flow
-![[python_control_flow.pdf]]
-
-## Lists
-![[python_lists.pdf]]
-
-## Loops
-![[python_loops.pdf]]
-
-## Functions
-![[python_functions.pdf]]
-
-## Strings
-![[python_strings.pdf]]
-
-## Modules
-![[python_modules.pdf]]
-
-## Dictionaries
-![[python_dictionaries.pdf]]
-
-## Files
-![[python_files.pdf]]
-
-## Classes
-![[python_classes.pdf]]

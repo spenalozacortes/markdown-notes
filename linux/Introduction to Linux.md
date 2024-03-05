@@ -645,23 +645,3 @@ Note: We need to be the owner of the file or admin to use `chmod`.
 
 #### Viewing and Modifying Permissions Outside of the Terminal
 We can view and modify permissions in the file manager application on a Linux Ubuntu desktop as well. Just right-click on the file, select properties from the drop-down, and choose the permissions tab. All the users/groups and permissions are easily selected from the drop-down menus.
-
-# Cheatsheets
-
-## What is Linux?
-![[linux_what_is_linux.pdf]]
-
-## Introduction to Operating Systems
-![[linux_introduction_to_operating _systems.pdf]]
-
-## Features of the Linux Desktop Environment
-![[linux_features_of_the_linux_desktop_environment.pdf]]
-
-## Linux Bash Utilities
-![[linux_linux_bash_utilities.pdf]]
-
-## Bash Scripting
-![[linux_bash_scripting.pdf]]
-
-## Practice Bash Scripting in Linux
-![[linux_practice_bash_scripting_in_linux.pdf]]

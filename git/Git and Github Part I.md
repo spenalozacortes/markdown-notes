@@ -280,18 +280,3 @@ The core Markdown syntax does not include nested lists (list within another list
  
    HTML stands for HyperText Markup Language.
 ``` 
-
-
-# Cheatsheets
-
-## Basic Git Workflow
-![[git_and_github_basic_git_workflow.pdf]]
-
-## Important Git Operations
-![[git_and_github_important_git_perations.pdf]]
-
-## Introduction to GitHub
-![[git_and_github_introduction_to_github.pdf]]
-
-## GitHub & Markdown
-![[git_and_github_github_and_markdown.pdf]]

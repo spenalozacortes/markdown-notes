@@ -705,6 +705,3 @@ app.listen(80, function () {
 });
 ```
 
-# Cheatsheets
-
-![[introduction_to_expressjs.pdf]]

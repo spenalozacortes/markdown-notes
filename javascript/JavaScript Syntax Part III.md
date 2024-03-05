@@ -669,14 +669,3 @@ Following the `try` block is the `catch` statement which accepts the thrown erro
 The curly braces that follow `catch(e)` is known as the *catch block* and contains code that executes to handle the error.
 
 Generally speaking, in a `try...catch` statement, we evaluate code in the `try` block and if the code throws an error, the code inside the `catch` block will handle the error for us. 
-
-
-# Cheatsheets
-
-## Classes
-![[javascript_syntax_classes.pdf]]
-
-## Error Handling
-![[javascript_syntax_error_handling.pdf]]
-
-

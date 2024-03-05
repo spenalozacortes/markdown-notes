@@ -1281,25 +1281,6 @@ console.log(array1);
 === 0 | keep original order of `a` and `b`
 
 
-# Cheatsheets
-
-## Arrays
-![[javascript_syntax_arrays.pdf]]
-
-## Loops
-![[javascript_syntax_loops.pdf]]
-
-## Objects
-![[javascript_syntax_objects.pdf]]
-
-## Iterators
-![[javascript_syntax_iterators.pdf]]
-
-## Errors and Debugging
-![[javascript_syntax_errors_and_debugging.pdf]]
-
-
-
 
 
 

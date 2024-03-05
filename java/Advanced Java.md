@@ -47,7 +47,6 @@ However, applying what we’ve learned about parallelism, we can extrapolate tha
 
 The task, to get the project done, is broken up into subtasks that are assigned to the individuals comprising the group. This means these subtasks are processed in parallel by separate individuals, or metaphorical CPUs / threads, simultaneously. And because these subtasks are all processing the same primary task, this is an example of parallelism. If we wanted to sprinkle in some concurrency, we can assign some members of this group more than one subtask to switch between.
 
-
 ## Threading Refresher
 In Java, threads are part of a program that follow their paths of execution independently. They can improve performance for processes that can be split into code that can run concurrently.
 
@@ -120,7 +119,6 @@ synchronized(lock) {
 }
 ```
 
-
 ## Parallel and Concurrent Programming
 
 ### Introduction to Parallel and Concurrent Programming
@@ -159,6 +157,8 @@ In this thread pool, the added threads idle until given work. A Blocking Queue i
 Once a thread finishes its task, it simply returns to watching this Blocking Queue and processes whatever tasks get enqueued next.
 
 In other words, you enqueue a task you want processed into a thread pool’s queue, and one of the idling threads will dequeue that task and process it. This keeps your threads busy and helps with reusability, plus it adds some much-needed constraints to your memory usage when creating and using threads.
+
+![[Pasted image 20240304201102.png]]
 
 Now, while you can create and use a custom thread pool yourself, we’re going to look at Java’s built-in ways to utilize thread pooling. It does this through something called an `Executor`.
 
@@ -250,7 +250,7 @@ public class RunnableTask implements Runnable {
 
 }
 ```
-
+#aqui
 ### The Fork-Join Framework
 A similar interface to the executor service was added in Java 7 that included functionality to split a task into smaller subtasks and re-enqueue them into the thread pool. This is particularly useful for more intensive tasks and actually implements parallelism to do it.
 

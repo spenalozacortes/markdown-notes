@@ -762,23 +762,3 @@ console.log(process.env.PWD);
 Notice that we are using console.log now instead of window.alert() since the window object isn’t available.
 
 process is an object containing data relating to the JavaScript file being executed. process.env is an object containing environment variables such as process.env.PWD which contains the current working directory (and stands for “Print Working Directory”).
-
-
-# Cheatsheets
-
-## Introduction
-![[javascript_syntax_introduction.pdf]]
-
-## Conditionals
-![[javascript_syntax_conditionals.pdf]]
-
-## Functions
-![[javascript_syntax_functions.pdf]]
-
-## Scope
-![[javascript_syntax_scope.pdf]]
-
-
-
-
-

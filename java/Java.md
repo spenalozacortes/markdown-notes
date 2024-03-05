@@ -3627,35 +3627,3 @@ for(int i=0; i<words.length; i++) {
 System.out.println("After...");
 System.out.println(Arrays.deepToString(words).replace("],", "],\n") + "\n");
 ```
-
-# Cheatsheets
-
-## Hello World
-![[java_hello_world.pdf]]
-
-## Variables
-![[java_variables.pdf]]
-
-## Object-Oriented Java
-![[java_object_oriented_java.pdf]]
-
-## Conditionals and Control Flow
-![[java_conditionals_and_control_flow.pdf]]
-
-## Arrays and ArrayLists
-![[java_arrays_and_arraylists.pdf]]
-
-## Loops
-![[java_loops.pdf]]
-
-## String Methods
-![[java_string_methods.pdf]]
-
-## Access, Encapsulation, and Static Methods
-![[java_access_encapsulation_and_static_methods.pdf]]
-
-## Inheritance and Polymorphism
-![[java_inheritance_and_polymorphism.pdf]]
-
-## Two-Dimensional Arrays
-![[java_two_dimensional_arrays.pdf]]

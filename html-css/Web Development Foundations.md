@@ -2282,25 +2282,6 @@ In the example above, a div with three smaller images will display from top to b
 - flex-flow is used to specify flex-wrap and flex-direction in one declaration.
 - Flex containers can be nested inside of each other by declaring display: flex or display: inline-flex for children of flex containers.
 
-# Cheatsheets
-
-## HTML: Elements and Structure
-![[html_elements_and_structure.pdf]]
-
-## CSS: Selectors and Visual Rules
-![[css_selectors_and_visual_rules.pdf]]
-
- 
-
-
-
-
-
-
-
-
-
-
 
 
 

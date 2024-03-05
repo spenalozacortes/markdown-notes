@@ -120,8 +120,3 @@ Once again, as with all other metacharacters, in order to match the symbols `^` 
 - The Kleene star, denoted with the asterisk `*`, is a quantifier that matches the preceding character 0 or more times
 - The Kleene plus, denoted by the plus `+`, matches the preceding character 1 or more times
 - The anchor symbols hat `^` and dollar sign `$` are used to match text at the start and end of a string, respectively
-
-# Cheatsheets
-
-## Introduction to Regular Expressions
-![[regular_expressions_introduction_to_regular_expressions.pdf]]
