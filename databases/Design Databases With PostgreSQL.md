@@ -1,4 +1,3 @@
-#postgresql 
 # What Is A Database?
 ## Welcome to Design Databases with PostgreSQL
 ### What is a Relational Database Management System?

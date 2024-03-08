@@ -1,4 +1,3 @@
-#bash #postgresql 
 # Learn Bash by Building a Boilerplate
 Type `pwd` into the terminal and press enter to see the path of the folder. `pwd` stands for "print working directory". The output tells you where the folder you are in is located.
 

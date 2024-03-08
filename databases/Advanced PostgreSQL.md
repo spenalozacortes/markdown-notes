@@ -1,4 +1,3 @@
-#postgresql
 # How Do I Make Sure My Database Stays Intact?
 
 ## PostgreSQL Roles: Database Security

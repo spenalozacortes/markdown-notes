@@ -1,4 +1,3 @@
-#postman #java #restassured #cucumber #gherkin #maven #graphql #jenkins #git
 # REST API basics and terminology
 
 ## Understanding GET, POST, PUT, DELETE HTTP CRUD operations of API

@@ -1,4 +1,3 @@
-#java 
 # Java Basics
 
 ## Understanding Java Syntax

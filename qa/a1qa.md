@@ -1,7 +1,5 @@
 # L1
-## Introduction
 
-![[Pasted image 20231013081329.png]]
 ## Version Control System (git)
 
 ### Why do we need VCS?

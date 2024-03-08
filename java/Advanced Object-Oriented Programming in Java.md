@@ -1,4 +1,3 @@
-#java 
 # Unit Testing and Debugging
 Unit testing allows you to systematically test individual units of your code, such as functions or methods, applying pressure through tests to ensure their proper functioning.
 

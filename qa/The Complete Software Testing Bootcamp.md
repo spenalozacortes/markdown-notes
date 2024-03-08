@@ -1,4 +1,3 @@
-![[software_testing_bootcamp.pdf]]
 # How Software is Developed - Software Development Lifecycle Models
 
 ## Waterfall Model

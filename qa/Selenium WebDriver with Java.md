@@ -1,4 +1,3 @@
-#java #seleniumwebdriver #seleniumgrid #selenium  #jenkins #cucumber #mysql #chromedevtools #maven
 # Install Java & Selenium
 
 ```bash

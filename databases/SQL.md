@@ -1,4 +1,3 @@
-#sqlite
 # Manipulation
 ## Manipulation
 

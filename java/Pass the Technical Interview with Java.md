@@ -1,5 +1,3 @@
-#java 
-#aqui 
 # Getting Started with Data Structures
 
 ## Welcome to Interview Prep in Java
@@ -810,12 +808,372 @@ Common operations on a doubly linked list may include:
 In a doubly linked list, adding to the list is a little complicated as we have to keep track of and set the node’s previous pointer as well as update the tail of the list if necessary.
 
 ##### Adding to the Head
+When adding to the head of the doubly linked list, we first need to check if there is a current head to the list. If there isn’t, then the list is empty, and we can simply make our new node both the head and tail of the list and set both pointers to `null`. If the list is not empty, then we will:
 
+- Set the current head’s previous pointer to our new head
+- Set the new head’s next pointer to the current head
+- Set the new head’s previous pointer to `null`
 
+##### Adding to the Tail
+Similarly, there are two cases when adding a node to the tail of a doubly linked list. If the list is empty, then we make the new node the head and tail of the list and set the pointers to `null`. If the list is not empty, then we:
+
+- Set the current tail’s next pointer to the new tail
+- Set the new tail’s previous pointer to the current tail
+- Set the new tail’s next pointer to `null`
+
+![[Pasted image 20240305193826.png]]
+
+#### Removing from the Head and Tail
+Due to the extra pointer and tail property, removing the head from a doubly linked list is slightly more complicated than removing the head from a singly linked list. However, the previous pointer and tail property make it much simpler to remove the tail of the list, as we don’t have to traverse the entire list to be able to do it.
+
+##### Removing the Head
+Removing the head involves updating the pointer at the beginning of the list. We will set the previous pointer of the new head (the element directly after the current head) to `null`, and update the head property of the list. If the head was also the tail, the tail removal process will occur as well.
+
+##### Removing the Tail
+Similarly, removing the tail involves updating the pointer at the end of the list. We will set the next pointer of the new tail (the element directly before the tail) to `null`, and update the tail property of the list. If the tail was also the head, the head removal process will occur as well.
+
+![[Pasted image 20240305194116.png]]
+
+#### Removing from the Middle of the List
+It is also possible to remove a node from the middle of the list. Since that node is neither the head nor the tail of the list, there are two pointers that must be updated:
+
+- We must set the removed node’s preceding node’s next pointer to its following node
+- We must set the removed node’s following node’s previous pointer to its preceding node
+
+There is no need to change the pointers of the removed node, as updating the pointers of its neighboring nodes will remove it from the list. If no nodes in the list are pointing to it, the node is orphaned.
+
+![[Pasted image 20240305194245.png]]
+
+#### Doubly Linked Lists Review
+Doubly Linked Lists:
+
+- Are comprised of nodes that contain links to the next and previous nodes
+- Are bidirectional, meaning it can be traversed in both directions
+- Have a pointer to a single head node, which serves as the first node in the list
+- Have a pointer to a single tail node, which serves as the last node in the list
+- Require the pointers at the head of the list to be updated after addition to or removal of the head
+- Require the pointers at the tail of the list to be updated after addition to or removed of the tail
+- Require the pointers of the surrounding nodes to be updated after removal from the middle of the list
 
 ### Doubly Linked Lists: Java
 
+#### Node Class and Constructor
+The difference between a doubly linked list and a singly linked list is that in a doubly linked list, the nodes have pointers to the previous node as well as the next node. This means that the doubly linked list data structure has a tail property in addition to a head property.
 
+For our use, we want to be able to:
+
+- add a new node to the beginning (head) of the list
+- add a new node to the end (tail) of the list
+- remove a node from the beginning (head) of the list
+- remove a node from the end (tail) of the list
+- find and remove a specific node by its data
+- print out the nodes in the list in order from head to tail
+
+```java
+public class Node {
+
+  public String data;
+  private Node next;
+  private Node previous;
+
+  public Node(String data) {
+    this.data = data;
+    this.next = null;
+  }
+  
+  public void setNextNode(Node node) {
+    this.next = node;
+  }
+
+  public void setPreviousNode(Node node) {
+    this.previous = node;
+  }
+
+  public Node getNextNode() {
+    return this.next;
+  }
+
+  public Node getPreviousNode() {
+    return this.previous;
+  }
+
+}
+```
+
+```java
+public class DoublyLinkedList {
+  public Node head;
+  public Node tail;
+
+  public DoublyLinkedList() {
+    this.head = null;
+    this.tail = null;
+  }
+
+  public static void main(String[] args) {
+
+  }
+
+}
+```
+
+#### Adding to the Head
+
+```java
+ public void addToHead(String data) {
+    Node newHead = new Node(data);
+    Node currentHead = this.head;
+    if (currentHead != null) {
+      currentHead.setPreviousNode(newHead);
+      newHead.setNextNode(currentHead);
+    }
+    this.head = newHead;
+    if (this.tail == null) {
+      this.tail = newHead;
+    }
+  }
+```
+
+#### Adding to the Tail
+Since doubly linked lists have a tail property, we don’t have to iterate through the entire list to add to the tail like we did with a singly linked list.
+
+```java
+  public void addToTail(String data) {
+    Node newTail = new Node(data);
+    Node currentTail = this.tail;
+    if (currentTail != null) {
+      currentTail.setNextNode(newTail);
+      newTail.setPreviousNode(currentTail);
+    }
+    this.tail = newTail;
+    if (this.head == null) {
+      this.head = newTail;
+    }
+  }
+```
+
+#### Removing the Head
+
+```java
+  public String removeHead() {
+    Node removedHead = this.head;
+    if (removedHead == null) {
+      return null;
+    }
+    this.head = removedHead.getNextNode();
+    if (this.head != null) {
+      this.head.setPreviousNode(null);
+    }
+    if (removedHead == this.tail) {
+      // this.removeTail();
+    }
+    return removedHead.data;
+  }
+```
+#aqui
+#### Removing the Tail
+
+```java
+  public String removeTail() {
+    Node removedTail = this.tail;
+    if (removedTail == null) {
+      return null;
+    }
+    this.tail = removedTail.getPreviousNode();
+    if (this.tail != null) {
+      this.tail.setNextNode(null);
+    }
+    if (removedTail == this.head) {
+      this.removeHead();
+    }
+    return removedTail.data;
+  }
+```
+
+#### Removing by Data 
+In order to do this:
+
+- Iterate through the list to find the matching node
+- If there is no matching element in the list:
+- Return `null`
+- If there is a matching node, we will then check to see if it is the head or tail of the list:
+- If so, call the corresponding `.removeHead()` or `.removeTail()` method
+- If not, that means the node was somewhere in the middle of the list. In that case:
+- Remove it by resetting the pointers of its previous and next nodes
+- Finally, return the node’s data
+
+```java
+  public Node removeByData(String data) {
+    Node nodeToRemove = null;
+    Node currentNode = this.head;
+
+    while (currentNode != null) {
+      if (currentNode.data == data) {
+        nodeToRemove = currentNode;
+        break;
+      }
+      currentNode = currentNode.getNextNode();
+    }
+
+    if (nodeToRemove == null) {
+      return null;
+    }
+    
+    if (nodeToRemove == this.head) {
+      this.removeHead();
+    } else if (nodeToRemove == this.tail) {
+      this.removeTail();
+    } else {
+      Node nextNode = nodeToRemove.getNextNode();
+      Node previousNode = nodeToRemove.getPreviousNode();
+      nextNode.setPreviousNode(previousNode);
+      previousNode.setNextNode(nextNode);
+    }
+
+    return nodeToRemove;
+  }
+```
+
+#### Review
+
+```java
+public class DoublyLinkedList {
+
+  public static void main(String[] args) {
+    // Create your subway line here:
+    DoublyLinkedList subway = new DoublyLinkedList();
+    subway.addToHead("Times Square");
+    subway.addToHead("Grand Central");
+    subway.addToHead("Central Park");
+    subway.printList();
+
+    subway.addToTail("Penn Station");
+    subway.addToTail("Wall Street");
+    subway.addToTail("Brooklyn Bridge");
+    subway.printList();
+
+    subway.removeHead();
+    subway.removeTail();
+    subway.printList();
+
+    subway.removeByData("Times Square");
+    subway.printList();
+  }
+    
+  public Node head;
+  public Node tail;
+
+  public DoublyLinkedList() {
+    this.head = null;
+    this.tail = null;
+  }
+
+  public void addToHead(String data) {
+    Node newHead = new Node(data);
+    Node currentHead = this.head;
+
+    if (currentHead != null) {
+      currentHead.setPreviousNode(newHead);
+      newHead.setNextNode(currentHead);
+    }
+    this.head = newHead;
+
+    if (this.tail == null) {
+      this.tail = newHead;
+    }
+  }
+
+  public void addToTail(String data) {
+    Node newTail = new Node(data);
+    Node currentTail = this.tail;
+
+    if (currentTail != null) {
+      currentTail.setNextNode(newTail);
+      newTail.setPreviousNode(currentTail);
+    }
+    this.tail = newTail;
+
+    if (this.head == null) {
+      this.head = newTail;
+    }
+  }
+
+  public String removeHead() {
+    Node removedHead = this.head;
+
+    if (removedHead == null) {
+      return null;
+    }
+    this.head = removedHead.getNextNode();
+
+    if (this.head != null) {
+      this.head.setPreviousNode(null);
+    }
+    if (removedHead == this.tail) {
+      this.removeTail();
+    }
+    return removedHead.data;
+  }
+
+  public String removeTail() {
+    Node removedTail = this.tail;
+
+    if (removedTail == null) {
+      return null;
+    }
+    this.tail = removedTail.getPreviousNode();
+
+    if (this.tail != null) {
+      this.tail.setNextNode(null);
+    }
+    if (removedTail == this.head) {
+      this.removeHead();
+    }
+    return removedTail.data;
+  }
+
+  public Node removeByData(String data) {
+    Node nodeToRemove = null;
+    Node currentNode = this.head;
+
+    while (currentNode != null) {
+      if (currentNode.data == data) {
+        nodeToRemove = currentNode;
+        break;
+      }
+      currentNode = currentNode.getNextNode();
+    }
+
+    if (nodeToRemove == null) {
+      return null;
+    }
+    if (nodeToRemove == this.head) {
+      this.removeHead();
+    } else if (nodeToRemove == this.tail) {
+      this.removeTail();
+    } else {
+      Node nextNode = nodeToRemove.getNextNode();
+      Node previousNode = nodeToRemove.getPreviousNode();
+      nextNode.setPreviousNode(previousNode);
+      previousNode.setNextNode(nextNode);
+    }
+    return nodeToRemove;
+  }
+
+  public String printList() {
+    Node currentNode = this.head;
+    String output = "<head> ";
+    while (currentNode != null) {
+      output += currentNode.data + " ";
+      currentNode = currentNode.getNextNode();
+    }
+    output += "<tail>";
+    System.out.println(output);
+    return output;
+  }
+
+}
+```
 
 
 ## Linked List Practice

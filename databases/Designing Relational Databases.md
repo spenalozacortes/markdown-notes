@@ -1,4 +1,3 @@
-#postgresql 
 # Triggers
 
 ## Database Triggers

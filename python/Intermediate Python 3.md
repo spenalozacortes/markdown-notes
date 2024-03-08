@@ -1,4 +1,3 @@
-#python
 # Function Arguments
 
 ## Python Gotcha: Mutable Default Arguments

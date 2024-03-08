@@ -1,4 +1,3 @@
-#mongodb
 # Database Basics
 
 ## Introduction to databases

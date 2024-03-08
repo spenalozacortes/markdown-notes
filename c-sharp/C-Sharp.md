@@ -1,4 +1,3 @@
-#c-sharp
 # Hello World
 
 ## Hello World

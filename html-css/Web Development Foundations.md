@@ -4,11 +4,13 @@
 A tag and the content between it is called an HTML element. 
 
 One of the key HTML elements we use to build a webpage is the body element. Only content inside the opening and closing body tags can be displayed to the screen. 
+
 ```html
 <body>
  
 </body>
 ```
+
 When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
 
 The relationship between elements and their ancestor and descendent elements is known as hierarchy.
@@ -18,6 +20,7 @@ Understanding HTML hierarchy is important because child elements can inherit beh
 In HTML, there are six different headings, or heading elements.
 
 One of the most popular elements in HTML is the \<div> element. \<div> is short for “division” or a container that divides the page into sections. These sections are very useful for grouping elements in your HTML together.
+
 ```html
 <body>
   <div>
@@ -26,6 +29,7 @@ One of the most popular elements in HTML is the \<div> element. \<div> is short 
   </div>
 </body>
 ```
+
 \<div>s don’t inherently have a visual representation, but they are very useful when we want to apply custom styles to our HTML elements. \<div>s allow us to group HTML elements to apply the same styles for all HTML elements inside. We can also style the \<div> element as a whole.
 
 \<div>s can contain any text or other HTML elements, such as links, images, or videos.
@@ -34,15 +38,18 @@ Attributes are content added to the opening tag of an element and can be used in
 
 - The name of the attribute
 - The value of the attribute
+
 ```html
 <div id="intro">
   <h1>Introduction</h1>
 </div>
 ```
+
 If you want to display text in HTML, you can use a paragraph or span:
 
 - Paragraphs (\<p>)contain a block of plain text.
 - \<span> contains short pieces of text or other HTML. They are used to separate small pieces of content that are on the same line as other content.
+
 ```html
 <div>
   <h1>Technology</h1>
@@ -51,6 +58,7 @@ If you want to display text in HTML, you can use a paragraph or span:
   <p><span>Self-driving cars</span> are anticipated to replace up to 2 million jobs over the next two decades.</p>
 </div>
 ```
+
 It’s best to use a \<span> element when you want to target a specific piece of content that is inline, or on the same line as other text. If you want to divide your content into blocks, it’s better to use a \<div>.
 
 You can also style text using HTML tags. The \<em> tag emphasizes text, while the \<strong> tag highlights important text.
@@ -59,16 +67,21 @@ Browsers have built-in style sheets that will generally style these tags in the 
 
 - The \<em> tag will generally render as italic emphasis.
 - The \<strong> will generally render as bold emphasis.
+
 ```html
 <p><strong>The Nile River</strong> is the <em>longest</em> river in the world, measuring over 6,850 kilometers long (approximately 4,260 miles).</p>
 ```
+
 The spacing between code in an HTML file doesn’t affect the positioning of elements in the browser. If you are interested in modifying the spacing in the browser, you can use HTML’s line break element: \<br>
+
 ```html
 <p>The Nile River is the longest river <br> in the world, measuring over 6,850 <br> kilometers long (approximately 4,260 <br> miles).</p>
 ```
+
 In HTML, you can use an unordered list tag (\<ul>) to create a list of items in no particular order. An unordered list outlines individual list items with a bullet point.
 
 Individual list items must be added to the unordered list using the \<li> tag.
+
 ```html
 <ul>
   <li>Limes</li>
@@ -76,7 +89,9 @@ Individual list items must be added to the unordered list using the \<li> tag.
   <li>Chicken</li>
 </ul>
 ```
+
 Ordered lists (\<ol>) are like unordered lists, except that each list item is numbered. 
+
 ```html
 <ol>
   <li>Preheat the oven to 350 degrees.</li>
@@ -85,16 +100,21 @@ Ordered lists (\<ol>) are like unordered lists, except that each list item is nu
   <li>Add eggs and vanilla extract to bowl.</li>
 </ol>
 ```
+
 The <img> tag allows you to add an image to a web page. Most elements require both opening and closing tags, but the \<img> tag is a self-closing tag. Note that the end of the \<img> tag has a forward slash /. Self-closing tags may include or omit the final slash — both will render properly.
+
 ```html
 <img src="image-location.jpg" />
 ```
+
 The src attribute must be set to the image’s source, or the location of the image. In this case, the value of src must be the uniform resource locator (URL) of the image. A URL is the web address or local address where a file is stored.
 
 The alt attribute, which means alternative text, brings meaning to the images on our sites. The alt attribute can be added to the image tag just like the src attribute. The value of alt should be a description of the image.
+
 ```html
 <img src="#" alt="A field of yellow sunflowers" />
 ```
+
 The alt attribute also serves the following purposes:
 
 - If an image fails to load on a web page, a user can mouse over the area originally intended for the image and read a brief description of the image. This is made possible by the description you provide in the alt attribute.
@@ -104,11 +124,13 @@ The alt attribute also serves the following purposes:
 If the image on the web page is not one that conveys any meaningful information to a user (visually impaired or otherwise), the alt attribute should be left empty.
 
 In addition to images, HTML also supports displaying videos. Like the <img> element, the \<video> element requires a src attribute with a link to the video source. Unlike the \<img> element however, the \<video> element requires an opening and a closing tag.
+
 ```html
 <video src="myVideo.mp4" width="320" height="240" controls>
   Video not supported
 </video>
 ```
+
 After the src attribute, the width and height attributes are used to set the size of the video displayed in the browser. The controls attribute instructs the browser to include basic video controls such as pausing and playing.
 
 The text, Video not supported, between the opening and closing video tags will only be displayed if the browser is unable to load the video.
@@ -127,26 +149,33 @@ The text, Video not supported, between the opening and closing video tags will o
 
 ## Structure
 HTML files require certain elements to set up the document properly. We can let web browsers know that we are using HTML by starting our document with a document type declaration.
+
 ```html
 <!DOCTYPE html>
 ```
+
 This declaration is an instruction, and it must be the first line of code in your HTML document. It tells the browser what type of document to expect, along with what version of HTML is being used in the document. For now, the browser will correctly assume that the html in <!DOCTYPE html> is referring to HTML5, as it is the current standard.
 
 HTML code is always saved in a file with an .html extension.
 
 To create HTML structure and content, we must add opening and closing \<html> tags after declaring <!DOCTYPE html>
+
 ```html
 <!DOCTYPE html>
 <html>
  
 </html>
 ```
+
 The \<head> element contains the metadata for a web page. Metadata is information about the page that isn’t displayed directly on the web page.
+
 ```html
 <head>
 </head>
 ```
+
 A browser’s tab displays the title specified in the \<title> tag. The \<title> tag is always inside of the \<head>.
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -155,25 +184,33 @@ A browser’s tab displays the title specified in the \<title> tag. The \<title>
   </head>
 </html>
 ```
+
 You can add links to a web page by adding an anchor element \<a> and including the text of the link in between the opening and closing tags.
+
 ```html
 <a href="https://www.wikipedia.org/">This Is A Link To Wikipedia</a>
 ```
+
 The target attribute specifies how a link should open. For a link to open in a new window, the target attribute requires a value of _blank. 
 
 When making multi-page static websites, web developers often store HTML files in the root directory, or a main folder where all the files for the project are stored. 
 
 Because the files are stored in the same folder, we can link web pages together using a relative path.
+
 ```html
 <a href="./contact.html">Contact</a>
 ```
+
 A relative path is a filename that shows the path to a local file (a file on the same website, such as ./index.html) versus an absolute path (a full URL, like https://www.codecademy.com/learn/learn-html which is stored in a different folder). The ./ in ./index.html tells the browser to look for the file in the current folder.
 
 HTML allows you to turn nearly any element into a link by wrapping that element with an anchor element.
+
 ```html
 <a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="https://www.Prickly_Pear_Closeup.jpg" alt="A red prickly pear fruit"/></a>
 ```
+
 In order to link to a target on the same page, we must give the target an id. An id can be added to most elements on a webpage. The target link is a string containing the # character and the target element’s id.
+
 ```html
 <p id="top">This is the top of the page!</p>
 <h1 id="bottom">This is the bottom! </h1>
@@ -183,6 +220,7 @@ In order to link to a target on the same page, we must give the target an id. An
   <li><a href="#bottom">Bottom</a></li>
 </ol>
 ```
+
 Programmers use two tools to visualize the relationship between elements: whitespace and indentation.
 
 The browser ignores whitespace in HTML files when it renders a web page, so it can be used as a tool to make code easier to read and follow.
@@ -192,9 +230,11 @@ The World Wide Web Consortium, or W3C, is responsible for maintaining the style 
 Indentation is used to easily visualize which elements are nested within other elements.
 
 Comments begin with \<!-- and end with -->. Any characters in between will be ignored by your browser.
+
 ```html
 <!-- This is a comment that the browser will not display. -->
 ```
+
 Including comments in your code is helpful for many reasons:
 - They help you (and others) understand your code if you decide to come back and review it at a much later date.
 - They allow you to experiment with new code, without having to delete old code.
@@ -213,12 +253,15 @@ Including comments in your code is helpful for many reasons:
 
 ## Tables
 Before displaying data, we must first create the table that will contain the data by using the \<table> element.
+
 ```html
 <table>
  
 </table>
 ```
+
 The first step in entering data into the table is to add rows using the table row element: \<tr>.
+
 ```html
 <table>
   <tr>
@@ -227,7 +270,9 @@ The first step in entering data into the table is to add rows using the table ro
   </tr>
 </table>
 ```
+
 Rows aren’t sufficient to add data to a table. Each cell element must also be defined. In HTML, you can add data using the table data element: \<td>.
+
 ```html
 <table>
   <tr>
@@ -236,8 +281,10 @@ Rows aren’t sufficient to add data to a table. Each cell element must also be 
   </tr>
 </table>
 ```
+
 To add titles to rows and columns, you can use the table heading element: \<th>. Just like table data, a table heading must be placed within a table row.
 The blank heading creates the extra table cell necessary to align the table headings correctly over the data they correspond to.
+
 ```html
 <table>
   <tr>
@@ -252,7 +299,6 @@ The blank heading creates the extra table cell necessary to align the table head
   </tr>
 </table>
 ```
-![[Pasted image 20221228170829.png]]
 
 Note, also, the use of the scope attribute, which can take one of two values:
 
@@ -260,6 +306,7 @@ Note, also, the use of the scope attribute, which can take one of two values:
 - col - this value makes it clear that the heading is for a column.
 
 In older versions of HTML, a border could be added to a table using the border attribute and setting it equal to an integer. This integer would represent the thickness of the border.
+
 ```html
 <table border="1">
   <tr>
@@ -268,14 +315,18 @@ In older versions of HTML, a border could be added to a table using the border a
   </tr>
 </table>
 ```
+
 The code in the example above is deprecated, so please don’t use it. It’s meant to illustrate older conventions you may come across when reading other developers’ code.
 You can achieve the same table border effect using CSS.
+
 ```css
 table, td {
   border: 1px solid black;
 }
 ```
+
 Data can span columns using the colspan attribute. The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+
 ```html
 <table>
   <tr>
@@ -289,7 +340,9 @@ Data can span columns using the colspan attribute. The attribute accepts an inte
   </tr>
 </table>
 ```
+
 Data can also span multiple rows using the rowspan attribute. It accepts an integer (greater than or equal to 1) to denote the number of rows it spans across.
+
 ```html
 <table>
   <tr> <!-- Row 1 -->
@@ -311,9 +364,11 @@ Data can also span multiple rows using the rowspan attribute. It accepts an inte
   </tr>
 </table>
 ```
+
 Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage.
 Long tables can be sectioned off using the table body element: \<tbody>.
 The \<tbody> element should contain all of the table’s data, excluding the table headings.
+
 ```html
 <table>
   <tbody>
@@ -337,7 +392,9 @@ The \<tbody> element should contain all of the table’s data, excluding the tab
   </tbody>
 </table>
 ```
+
 When a table’s body is sectioned off, however, it also makes sense to section off the table’s column headings using the \<thead> element.
+
 ```html
 <table>
   <thead>
@@ -363,9 +420,11 @@ When a table’s body is sectioned off, however, it also makes sense to section 
   </tbody>
 </table>
 ```
+
 Only the column headings go under the \<thead> element.
 
 The bottom part of a long table can also be sectioned off using the \<tfoot> element.
+
 ```html
 <table>
   <thead>
@@ -396,9 +455,11 @@ The bottom part of a long table can also be sectioned off using the \<tfoot> ele
   </tfoot>
 </table>
 ```
+
 Footers are often used to contain sums, differences, and other data results.
 
 CSS, or Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page. You can use CSS to style tables.
+
 ```css
 table, th, td {
   border: 1px solid black;
@@ -406,6 +467,7 @@ table, th, td {
   text-align: center;
 }
 ```
+
 ### Review
 - The \<table> element creates a table.
 - The \<tr> element adds rows to a table.
@@ -420,6 +482,7 @@ table, th, td {
 
 ## Semantic HTML
 A ```<header>``` is a container usually for either navigational links or introductory content containing ```<h1>``` to ```<h6>``` headings.
+
  ```html
  <header>
   <h1>
@@ -427,7 +490,9 @@ A ```<header>``` is a container usually for either navigational links or introdu
   </h1>
 </header>
  ```
+
 A ```<nav>``` is used to define a block of navigation links such as menus and tables of contents. It is important to note that ```<nav>``` can be used inside of the ```<header>``` element but can also be used on its own.
+
  ```html
  <header> 
   <nav>
@@ -438,9 +503,11 @@ A ```<nav>``` is used to define a block of navigation links such as menus and ta
   </nav>
 </header>
  ```
+
 Two more structural elements are ```<main>``` and ```<footer>```. These elements along with ```<nav>``` and ```<header>``` help describe where an element is located based on conventional web development standards.
 
 The element ```<main>``` is used to encapsulate the dominant content within a webpage. This tag is separate from the ```<footer>``` and the ```<nav>``` of a web page since these elements don’t contain the principal content. 
+
 ```html
 <main>
   <header>
@@ -454,6 +521,7 @@ The element ```<main>``` is used to encapsulate the dominant content within a we
   </article>
 </main>
 ```
+
 The content at the bottom of the subject information is known as the footer, indicated by the ```<footer>``` element. The footer contains information such as:
 
 - Contact information
@@ -461,20 +529,25 @@ The content at the bottom of the subject information is known as the footer, ind
 - Terms of use
 - Site Map
 - Reference to top of page links
+
 ```html
 <footer>
   <p>Email me at Codey@Codecademy.com</p>
 </footer>
 ```
+
 The ```<footer>``` tag is separate from the ```<main>``` element and typically located at the bottom of the content.
 
 ```<section>``` defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.
+
 ```html
 <section>
   <h2>Fun Facts About Cricket</h2> 
 </section>
 ```
+
 The ```<article>``` element holds content that makes sense on its own. ```<article>``` can hold content such as articles, blogs, comments, magazines, etc. An ```<article>``` tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.
+
 ```html
 <section>
   <h2>Fun Facts About Cricket</h2>
@@ -483,6 +556,7 @@ The ```<article>``` element holds content that makes sense on its own. ```<artic
   </article>
 </section>
 ```
+
 It is important to note that a ```<section>``` element could also be placed in an ```<article>``` element depending on the context.
 
 The ```<aside>``` element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as ```<article>``` or ```<section>```. Some common uses of the ```<aside>``` element are for:
@@ -493,6 +567,7 @@ The ```<aside>``` element is used to mark additional information that can enhanc
 - Pull quotes
 - Editorial sidebars
 - Additional information
+
 ```html
 <article>
   <p>The first World Series was played between Pittsburgh and Boston in 1903 and was a nine-game series.</p>
@@ -503,44 +578,57 @@ The ```<aside>``` element is used to mark additional information that can enhanc
   </p>
 </aside>
 ```
+
 ```<figure>``` is an element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.
+
 ```html
 <figure>
   <img src="overwatch.jpg">
 </figure>
 ```
+
 ```<figcaption>``` is an element used to describe the media in the ```<figure>``` tag. Usually, ```<figcaption>``` will go inside ```<figure>```.
+
 ```html
 <figure>
   <img src="overwatch.jpg">
   <figcaption>This picture shows characters from Overwatch.</figcaption>
 </figure>
 ```
+
 The ```<audio>``` element is used to embed audio content into a document. Like ```<video>```, ```<audio>``` uses src to link the audio source.
+
 ```html
 <audio>
   <source src="iAmAnAudioFile.mp3" type="audio/mp3">
 </audio>
 ```
+
 Although not always necessary, it’s recommended that we state the type of audio as it helps the browser identify it more easily and determine if that type of audio file is supported by the browser.
 
 There are many attributes for ```<audio>``` but today we’re going to be focusing on controls and src:
 - controls: automatically displays the audio controls into the browser such as play and mute.
 - src: specifies the URL of the audio file.
+
 ```html
 <audio autoplay controls>
 ```
+
 Some attributes that can alter a video playback include:
 - controls: When added in, a play/pause button will be added onto the video along with volume control and a fullscreen option.
 - autoplay: The attribute which results in a video automatically playing as soon as the page is loaded.
 - loop: This attribute results in the video continuously playing on repeat.
+
 ```html
 <video src="coding.mp4" controls>Video not supported</video>
 ```
+
 Another tag that can be used to incorporate media content into a page is the ```<embed>``` tag, which can embed any media content including videos, audio files, and gifs from an external source. This means that websites that have an embed button have some form of media content that can be added to other websites. The ```<embed>``` tag is a self-closing tag, unlike the ```<video>``` element. Note that ```<embed>``` is a deprecated tag and other alternatives, such as ```<video>```, ```<audio>``` and ```<img>```, should be used in its place.
+
 ```html
 <embed src="download.gif"/>
 ```
+
 Embed can be used to add local files as well as media content straight from some other websites.
 
 ### Review
@@ -582,17 +670,22 @@ Inline Style Terms:
 
 Although CSS is a different language than HTML, it’s possible to write CSS code directly within HTML code using inline styles.
 To style an HTML element, you can add the style attribute directly to the opening tag. After you add the attribute, you can set it equal to the CSS style(s) you’d like applied to that element.
+
 ```html
 <p style='color: red;'>I'm learning to code!</p>
 ```
+
 If you’d like to add more than one style with inline styles, simply keep adding to the style attribute. Make sure to end the styles with a semicolon (;).
+
 ```html
 <p style='color: red; font-size: 20px;'>I'm learning to code!</p>
 ```
+
 It’s important to know that inline styles are a quick way of directly styling an HTML element, but are rarely used when creating websites.
 
 HTML allows you to write CSS code in its own dedicated section with a \<style> element nested inside of the \<head> element. The CSS code inside the \<style> element is often referred to as an internal stylesheet.
 An internal stylesheet has certain benefits and use cases over inlines styles, but once again, it’s not best practice.
+
 ```html
 <head>
   <style>
@@ -603,6 +696,7 @@ An internal stylesheet has certain benefits and use cases over inlines styles, b
   </style>
 </head>
 ```
+
 Developers avoid mixing code by storing HTML and CSS code in separate files (HTML files contain only HTML code, and CSS files contain only CSS code).
 You can create an external stylesheet by using the .css file name extension, like so: style.css
 
@@ -610,13 +704,17 @@ When HTML and CSS codes are in separate files, the files must be linked.
 You can use the \<link> element to link HTML and CSS files together. The \<link> element must be placed within the head of the HTML file. It is a self-closing tag and requires the following attributes:
 - href — like the anchor element, the value of this attribute must be the address, or path, to the CSS file.
 - rel — this attribute describes the relationship between the HTML file and the CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
+
 ```html
 <link href='https://www.codecademy.com/stylesheets/style.css' rel='stylesheet'>
 ```
+
 If the CSS file is stored in the same directory as your HTML file, then you can specify a relative path instead of a URL.
+
 ```html
 <link href='./style.css' rel='stylesheet'>
 ```
+
 #### Review
 - The basic anatomy of CSS syntax written for both inline styles and stylesheets.
 - Some commonly used CSS terms, such as ruleset, selector, and declaration.
@@ -635,22 +733,29 @@ A selector is used to target the specific HTML element(s) to be styled by the de
 Since element types are often referred to by their opening tag name, the type selector is sometimes referred to as the tag name or element selector.
 
 The universal selector selects all elements of any type. The universal selector uses the * character in the same place where you specified the type selector in a ruleset.
+
 ```css
 * { 
   font-family: Verdana;
 }
 ```
+
 When working with HTML and CSS a class attribute is one of the most common ways to select an element.
+
 ```html
 <p class='brand'>Sole Shoe Company</p>
 ```
+
 To select an HTML element by its class using CSS, a period (.) must be prepended to the class’s name.
+
 ```css
 .brand {
  
 }
 ```
+ 
  It’s possible to add more than one class name to an HTML element’s class attribute.
+ 
  ```css
  .green {
   color: green;
@@ -660,29 +765,39 @@ To select an HTML element by its class using CSS, a period (.) must be prepended
   font-weight: bold;
 }
  ```
+
  We can add multiple classes to an HTML element’s class attribute by separating them with a space.
+ 
  ```html
  <h1 class='green bold'> ... </h1>
  ```
+ 
  If an HTML element needs to be styled uniquely, we can give it an ID using the id attribute.
+ 
  ```html
  <h1 id='large-title'> ... </h1>
  ```
+
  In contrast to class which accepts multiple values, and can be used broadly throughout an HTML document, an element’s id can only have a single value, and only be used once per page.
 
 To select an element’s ID with CSS, we prepend the id name with a number sign (#).
+
 ```css
 #large-title {
  
 }
 ```
+
 The attribute selector can be used to target HTML elements that already contain attributes. Elements of the same type can be targeted differently by their attribute or attribute value.
+
 ```css
 [href]{
    color: magenta;
 }
 ```
+
 It can get more granular from there by adding type and/or attribute values. One way is by using type\[attribute*=value]. In short, this code selects an element where the attribute contains any instance of the specified value. 
+
 ```html
 <img src='/images/seasons/cold/winter.jpg'>
 <img src='/images/seasons/warm/summer.jpg'>
@@ -696,6 +811,7 @@ img[src*='summer'] {
   height: 100px;
 }
 ```
+
 The attribute selector is used to target each image individually.
 - The first ruleset looks for an img element with an attribute of src that contains the string 'winter', and sets the height to 50px.
 - The second ruleset looks for an img element with an attribute of src that contains the string 'summer', and sets the height to 100px.
@@ -703,11 +819,13 @@ The attribute selector is used to target each image individually.
 :focus, :visited, :disabled, and :active are all pseudo-classes. Factors such as user interaction, site navigation, and position in the document tree can all give elements a different state with pseudo-class.
 
 A pseudo-class can be attached to any selector. It is always written as a colon : followed by a name.
+
 ```css
 p:hover {
   background-color: lime;
 }
 ```
+
 CSS classes are meant to be reused over many elements. By writing CSS classes, you can style elements in a variety of ways by mixing classes.
 
 While classes are meant to be used many times, an ID is meant to style only one element. IDs override the styles of types and classes. Since IDs override these styles, they should be used sparingly and only on elements that need to always appear the same.
@@ -718,14 +836,17 @@ IDs are the most specific selector in CSS, followed by classes, and finally, typ
 
 When writing CSS rules, it’s possible to require an HTML element to have two or more CSS selectors at the same time.
 This is done by combining multiple selectors, which we will refer to as chaining. 
+
 ```css
 h1.special {
  
 }
 ```
+
 The code above would select only the \<h1> elements with a class of special.
 
 CSS also supports selecting elements that are nested within other HTML elements, also known as descendants. 
+
 ```html
 <ul class='main-list'>
   <li> ... </li>
@@ -733,19 +854,24 @@ CSS also supports selecting elements that are nested within other HTML elements,
   <li> ... </li>
 </ul>
 ```
+
 The nested \<li> elements are descendants of the \<ul> element and can be selected with the descendant combinator.
+
 ```css
 .main-list li {
  
 }
 ```
+
 Instead of writing font-family: Georgia twice for two selectors, we can separate the selectors by a comma to apply the same style to both.
+
 ```css
 h1, 
 .menu {
   font-family: Georgia;
 }
 ```
+
 #### Review
 - CSS can select HTML elements by type, class, ID, and attribute.
 - All elements can be selected using the universal selector.
@@ -761,41 +887,51 @@ h1,
 
 Font refers to the technical term typeface, or font family.
 To change the typeface of text on your web page, you can use the font-family property.
+
 ```css
 h1 {
   font-family: Garamond;
 }
 ```
+
 When setting typefaces on a web page, keep the following points in mind:
 - The font specified must be installed on the user’s computer or downloaded with the site.
 - Web safe fonts are a group of fonts supported across most browsers and operating systems.
 - Unless you are using web safe fonts, the font you choose may not appear the same between all browsers and operating systems.
 - When the name of a typeface consists of more than one word, it’s a best practice to enclose the typeface’s name in quotes.
+
 ```css
 h1 {
   font-family: 'Courier New';
 }
 ```
+
 To change the size of text on your web page, you can use the font-size property.
+
 ```css
 p {
   font-size: 18px;
 }
 ```
+
 In CSS, the font-weight property controls how bold or thin text appears.
+
 ```css
 p {
   font-weight: bold;
 }
 ```
+
 The font-weight property has another value: normal.
 
 To align text we can use the text-align property. The text-align property will align text to the element that holds it, otherwise known as its parent.
+
 ```css
 h1 {
   text-align: right;
 }
 ```
+
 The text-align property can be set to one of the following commonly used values:
 - left — aligns text to the left side of its parent element, which in this case is the browser.
 - center — centers text inside of its parent element.
@@ -805,31 +941,40 @@ The text-align property can be set to one of the following commonly used values:
 In CSS, these two design aspects can be styled with the following two properties:
 - color: this property styles an element’s foreground color
 - background-color: this property styles an element’s background color
+
 ```css
 h1 {
   color: red;
   background-color: blue;
 }
 ```
+
 Opacity is the measure of how transparent an element is. It’s measured from 0 to 1, with 1 representing 100%, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+
 ```css
 .overlay {
   opacity: 0.5;
 }
 ```
+ 
  One option is to make the background of an element an image. This is done through the CSS property background-image.
+ 
  ```css
  .main-banner {
   background-image: url('https://www.example.com/image.jpg');
 }
  ```
+ 
  The url can be a file within your project, or it can be a link to an external site. To link to an image inside an existing project, you must provide a relative file path. If there was an image folder in the project, with an image named mountains.jpg, the relative file path would look like below:
+ 
  ```css
  .main-banner {
   background-image: url('images/mountains.jpg');
 }
  ```
+
  !important can be applied to specific declarations, instead of full rules. It will override any style no matter how specific it is. As a result, it should almost never be used. Once !important is used, it is very hard to override.
+ 
  ```css
  p {
   color: blue !important;
@@ -839,6 +984,7 @@ Opacity is the measure of how transparent an element is. It’s measured from 0 
   color: red;
 }
 ```
+
 #### Review
 - The font-family property defines the typeface of an element.
 - font-size controls the size of text displayed.
@@ -848,7 +994,7 @@ Opacity is the measure of how transparent an element is. It’s measured from 0 
 - CSS can make an element transparent with the opacity property.
 - CSS can also set the background of an element to an image with the background-image property.
 - The !important flag will override any style, however it should almost never be used, as it is extremely difficult to override.
-
+#corregir
 ## The Box Model
 
 ### The Box Model

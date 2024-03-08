@@ -1,4 +1,3 @@
-#java #tomcat
 # Parallel and Concurrent Programming
 
 ## What is Parallel and Concurrent Programming?

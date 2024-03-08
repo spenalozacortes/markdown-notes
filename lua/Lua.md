@@ -1,4 +1,3 @@
-#lua
 # Introduction to Lua
 
 ## Introduction to Lua
@@ -144,7 +143,7 @@ When we use an operator to transform data, we call it an **expression** that 
 - Whenever we’re unsure what data type a value has, we can use the [`type()`](https://www.codecademy.com/resources/docs/lua/mathematical-library/type) function to help us figure that out.
 
 ## Variables
-#aqui
+
 ### Introduction to Variables
 [Variables](https://www.codecademy.com/resources/docs/lua/variables) are named containers in the computer’s memory that can help us store, retrieve, and manipulate data.
 
