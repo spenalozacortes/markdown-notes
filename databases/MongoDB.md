@@ -469,7 +469,7 @@ We can have as many field-value pairs as we want in our query! To see the query 
 
 Imagine we wanted to query this collection to find all of the vehicles that are manufactured in `"Japan"`.
 
-```sh
+```MongoDB
 db.auto_makers.find({ country: "Japan" });
 ```
  

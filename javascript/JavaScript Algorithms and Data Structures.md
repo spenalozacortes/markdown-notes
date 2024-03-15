@@ -2976,7 +2976,7 @@ let newArray = array.splice(3, 2);
 ```
 
 newArray has the value ```['really', 'happy']```.
-#aqui
+
 ## Add Items Using splice()
 Remember in the last challenge we mentioned that splice() can take up to three parameters? Well, you can use the third parameter, comprised of one or more element(s), to add to the array. This can be incredibly useful for quickly switching out an element, or a set of elements, for another.
 
@@ -3161,6 +3161,7 @@ function mutation(arr) {
 
 mutation(["hello", "hey"]);
 ```
+
 ## Chunky Monkey
 Write a function that splits an array (first argument) into groups the length of size (second argument) and returns them as a two-dimensional array.
 
@@ -3203,8 +3204,10 @@ let duck = {
   numLegs: 2,
   sayName: function() {return "The name of this duck is " + duck.name + ".";}
 };
+
 duck.sayName();
 ```
+
 ## Make Code More Reusable with the this Keyword
 The last challenge introduced a method to the duck object. It used duck.name dot notation to access the value for the name property within the return statement.
 
@@ -3285,6 +3288,7 @@ Then pass in the values as arguments to define each unique bird into the Bird co
 ```js
 let cardinal = new Bird("Bruce", "red");
 ```
+
 ## Verify an Object's Constructor with instanceof
 Anytime a constructor function creates a new object, that object is said to be an instance of its constructor. JavaScript gives a convenient way to verify this with the *instanceof* operator. *instanceof* allows you to compare an object to a constructor, returning true or false based on whether or not that object was created with the constructor. 
 
@@ -3681,10 +3685,9 @@ function Animal() { }
 Animal.prototype.eat = function() {
   return "nom nom nom";
 };
+
 function Bird() { }
-
 Bird.prototype = Object.create(Animal.prototype);
-
 Bird.prototype.eat = function() {
   return "peck peck peck";
 };
@@ -3912,6 +3915,7 @@ Let's try to master this discipline and not alter any variable or object in our 
 
 ### Challenge
 Fill in the code for the function incrementer so it returns the value of the global variable fixedValue increased by one.
+
 ```js
 // The global variable
 let fixedValue = 4;

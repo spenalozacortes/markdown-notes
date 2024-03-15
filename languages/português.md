@@ -2730,5 +2730,7 @@ Se quisermos alugar um apartamento com móveis, dizemos **apartamento mobiliado
 > aterrissar
 > O avião aterrissou com atraso.
 > embarcar
-> Nós embarcamos sem problemas.
-> 
+>  Nós embarcamos sem problemas.
+
+## Capítulo 6: Viajes y ocio
+

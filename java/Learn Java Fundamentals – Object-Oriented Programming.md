@@ -3143,7 +3143,7 @@ public class Main {
     }
 }
 ```
-#aqui
+
 #### API Design and Abstraction
 Interfaces are frequently employed in API design to specify contracts for other developers to abide by when implementing an interface. This creates abstraction and provides a separation between contract fulfillment and its implementation. This also helps developers to focus on class behavior rather than specific implementation details.
 
