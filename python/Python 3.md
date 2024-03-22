@@ -615,7 +615,6 @@ full_gradebook = last_semester_gradebook + gradebook
 print(full_gradebook)
 ```
 
-
 ## Working with Lists in Python
 
 ### Adding by Index: Insert
@@ -878,7 +877,6 @@ print(converted_list) # [('Jenny', 61), ('Alexus', 70), ('Sam', 67), ('Grace', 6
 ```
 
 Our inner lists don’t use square brackets `[ ]` around the values. This is because they have been converted into *tuples* (an immutable type of list).
-
 
 # Loops
 ## Loops
@@ -1430,7 +1428,6 @@ train_work = get_work(train_mass, train_acceleration, train_distance)
 print("The GE train does " + str(train_work) + " Joules of work over " + str(train_distance) + " meters.")
 ```
 
- 
 # Strings
 ## Introduction to Strings
 
@@ -1808,7 +1805,6 @@ You can even reverse the order of `artist` and `song` in the code above and it w
 - `.find()` searches a string for a character/string and returns the index value that character/string is found at.
 - `.format()` allows you to interpolate a string with variables.
 
-
 # Modules
 ## Modules in Python
 
@@ -1914,7 +1910,6 @@ Even files inside the *same directory* do not have access to each other’s vari
 
 ### Review
 This is just the beginning. Using a package manager (like conda or pip3), you can install any modules available on the Python Package Index.
-
 
 # Dictionaries
 ## Creating Dictionaries
@@ -2140,7 +2135,6 @@ for company, value in biggest_brands.items():
   print(company + " has a value of " + str(value) + " billion dollars. ")
 ```
 
- 
 # Files
 ## Learn Python: Files
 

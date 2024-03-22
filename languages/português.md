@@ -2734,3 +2734,26 @@ Se quisermos alugar um apartamento com móveis, dizemos **apartamento mobiliado
 
 ## Capítulo 6: Viajes y ocio
 
+### El mundo a nuestro alrededor
+
+> o oceano
+> O Oceano Pacífico fica entre a América e a Ásia.
+> o rio
+> O rio Nilo passa pelo Egito.
+> o lago
+> O lago Ness fica no norte da Escócia.
+> a catarata
+> As cataratas do Niágara são umas famosas cataratas entre os Estados Unidos e o Canadá.
+> a ilha
+> Mykonos é uma ilha da Grécia.
+> o deserto
+> O deserto do Sahara é o maior do mundo.
+> a montanha
+> As montanhas rochosas ficam nos Estados Unidos.
+> a floresta
+> Robin Hood vivia na floresta de Sherwood.
+> a costa
+> Nova York é um estado situado na costa Atlântica.
+> a falésia
+> As falésias de Moher ficam no oeste da Irlanda.
+

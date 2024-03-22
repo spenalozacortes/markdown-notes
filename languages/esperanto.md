@@ -1147,7 +1147,7 @@ The sentence function of an object, along with several other functions, is recog
 
 Many sentence functions of different types can be recognized by various short words called **prepositions**.
 
-# Nominative
+## Nominative
 The nominative (without a preposition, without the accusative ending) is used for the following roles:
 
 - [subject](https://lernu.net/gramatiko/nominativo#subjekto)
@@ -1155,7 +1155,7 @@ The nominative (without a preposition, without the accusative ending) is used fo
 - [predicate nominative](https://lernu.net/gramatiko/nominativo#nominacio)
 - [predicate](https://lernu.net/gramatiko/nominativo#predikativo)
 
-## Subject
+### Subject
 A subject is that which performs the action of the predicate. The subject must always be in the nominative.
 
 - **La patro** donis al mi dolĉan pomon. - My father gave me a sweet apple.
@@ -1169,7 +1169,7 @@ A subject is that which performs the action of the predicate. The subject must a
 - Mankas al mi **nenio**. - I lack nothing.
 - **Ŝi** estas tre maljuna. - She is very old.
 
-## Vocative
+### Vocative
 The sentence function called vocative show to whom the utterance is directed. A vocative is usually the name of the person adressed, and it is said specifically for getting their attention. The vocative is normally separated from the rest of the sentence by a comma or commas. The vocative must always be in the nominative.
 
 - **Elizabeto**, ĉu vi scias, kie la hundo estas? - Elizabeth, do you know where the dog is?
@@ -1177,7 +1177,7 @@ The sentence function called vocative show to whom the utterance is directed. A 
 - Mi deziras al vi bonan tagon, **sinjoro**! - I wish you a good day, Sir!
 - **Estimata prezidanto**, mi ŝatus fari jenan proponon. - Mr. Chairman (Madam Chairman), I would like to make the following proposal. (estimata = esteemed)
 
-## Nominative
+### Nominative
 Noun sentence elements can have an epithet which shows the identity of the matter, normally by its proper name. That kind of **restrictive appositive** always stands after its main word and should be in the nominative:
 
 - Tio estis en la monato **Majo**. - That was in the month of May.
@@ -1194,10 +1194,10 @@ Don't use the preposition [de](https://lernu.net/gramatiko/de) before a predic
 
 Compare a predicate nominative with an [apposition](https://lernu.net/gramatiko/apozicio).
 
-## Predicative
+### Predicative
 A predicative is a phrase which **describes** the subject or object **by means of the predicate**. The predicative is normally in the nominative.
 
-### Predicate nominative
+#### Predicate nominative
 The verb esti is the main verb which links the description to the subject. Other such linking verbs are, for example, (far)iĝi, ŝajni, montriĝi and nomiĝi.
 
 A predicate nominative is most often an adjective (adjectival phrase) or adjective-like particle.
@@ -1251,7 +1251,7 @@ We also use an adverb instead of an adjective when there is no subject mentioned
 
 If the subject is an implied noun or pronoun, then use the adjective form: La mastro traktis min tre bone, kaj estis tre **afabla**. = ...kaj li estis tre **afabla**. Estu **kuraĝa**! = Vi estu **kuraĝa**!
 
-### Object predicative
+#### Object predicative
 Some verbs can be used to link a description of their object. Although such predicatives describe an object, they should not receive the ending N:
 
 - Vi farbas la domon **ruĝan**. (= Vi farbas la ruĝan domon.) - You are painting the red house.
@@ -1306,7 +1306,398 @@ If the object is an infinitive or subordinate clause, then use an adverb as the 
 
 According to some grammarians one should use an adjective in these types of sentences, because they feel that the adverbial form can be misunderstood as a circumstantial complement of manner. They therefore recommend saying for example Ili trovis saĝa **forkuri**.
 
-#### How to check
+##### How to check
 If we are not sure whether it's an epithet or an object predicative we can replace the object with a pronoun (lin, ŝin, ĝin, ilin etc). We then tend to take out the epithet because it is part of the object. The predicative, however, we tend to keep because it is an independent sentence element necessary to the meaning of the sentence: Ĉu vi farbas la domon **ruĝan**? → Ĉu vi farbas ĝin? Ruĝan is an epithet. Ĉu vi farbas la domon **ruĝa**? → Ĉu vi farbas ĝin **ruĝa**? Ruĝa is an object predicative.
 
-# Accusative
+## Accusative
+The grammatical ending N is called an accusative ending or simply an accusative. It can be added as an ending to words of various types:
+
+- [nouns](https://lernu.net/gramatiko/substantivoj): domo → domo**n**, hundo → hundo**n**, virino → virino**n**, seĝoj → seĝoj**n**, ekskursoj → ekskursoj**n**
+- [adjectives](https://lernu.net/gramatiko/adjektivoj): ruĝa → ruĝa**n**, granda → granda**n**, virina → virina**n**, verdaj → verdaj**n**, knabaj → knabaj**n**
+- [personal pronouns](https://lernu.net/gramatiko/pronomoj): mi → mi**n**, ĝi → ĝi**n**, ili → ili**n**, oni → oni**n**, si → si**n**
+- [tablewords (correlatives) ending in U, O, and A](https://lernu.net/gramatiko/tabelvortoj): kiu → kiu**n**, iu → iu**n**, ĉiuj → ĉiuj**n**, kio → kio**n**, ĉio → ĉio**n**, ia → ia**n**, nenia → nenia**n**, tiaj → tiaj**n**
+- location [adverbs](https://lernu.net/gramatiko/adverboj) and [location correlatives in E](https://lernu.net/gramatiko/tabelvortoj#tabelvortoj-e):hejme → hejme**n**, tie → tie**n**, ie → ie**n**
+
+The N-ending is always placed after a [J-ending](https://lernu.net/gramatiko/singularo_kaj_pluralo), where one is present: domojn, hundojn, virinojn, ruĝajn, grandajn, virinajn, kiujn, kiajn.
+
+If a noun has the N-ending, then all adjectives and table words in U and A forms, which are **epithets** to that noun (that is, which describe the noun) should also have the N-ending.
+
+- **grandan** domon
+- domon **ruĝan**
+- **tiun** domon
+- **tiajn** domojn
+- **tiun** domon **grandan**
+- **tian malgrandan** domon **antikvan**
+- la **malgrandajn** domojn
+- domojn sen ĉiu ajn dubo tre **antikvajn**
+
+[Objective predicatives](https://lernu.net/gramatiko/nominativo#objekta-predikativo), however, should not have the N-ending: Mi refarbis la flavajn seĝojn **blankaj**.
+
+The N-ending can show:
+
+- [object](https://lernu.net/gramatiko/akuzativo#objekto)
+- [measurement](https://lernu.net/gramatiko/akuzativo#mezuro)
+- [point in time](https://lernu.net/gramatiko/akuzativo#tempopunkto)
+- [direction](https://lernu.net/gramatiko/akuzativo#direkto)
+- [other meanings](https://lernu.net/gramatiko/akuzativo#aliaj-signifoj)
+
+### Object
+An object is the thing that is **directly influenced by an action**. The direct object is shown using the accusative N-ending. That enables use of various word orders.
+
+Each of the following sentences has basically the same meaning: kato mordas hundon; kato hundon mordas; mordas kato hundon; mordas hundon kato; hundon kato mordas; hundon mordas kato (in each case the cat is the one who is biting while the dog is suffering the bite. On account of the N-ending each one of the equivalent variants is clearly understood. The word order only depends on style and taste.
+
+Mi amas vin; mi vin amas; vin mi amas; vin amas mi; amas mi vin; amas vin mi. All six variants basically have the same meaning: The action amas originates with "mi", and the love goes to "vi".
+
+A sentence with an object can be transformed into a [passive sentence](https://lernu.net/gramatiko/participoj#pasivo). Then the object becomes a subject.
+
+Esti (to be) and similar verbs are not actions directed towards something. The part of the sentence which relates to esti is not an object but a [predicative](https://lernu.net/gramatiko/nominativo#predikativo), which never has an N-ending: Tio estas **tri seĝoj**. Mi estas **kuracisto**. Ŝi fariĝis **doktoro**. Mia patro nomiĝas **Karlo**.
+
+The subject of a verb can be placed after the predicate. This word order is used very frequently with some verbs. The N-ending shouldn't be used with these subjects:
+
+- Hieraŭ okazis grava afero. - Yesterday an important matter occurred.
+    
+    The subject of the action okazis (happened) is grava afero (an important thing). Don't say: Hieraŭ okazis grava**n** afero**n**. When hearing that expression, the listener must ask, "**what** happened the important thing". But "okazi" (to happen) isn't an action that goes from the performer of the action to something affected by that action. The verb "to happen" only has one (primary) actor: that which happens. This actor always appears as a subject, and therefore should not have an N-ending.
+    
+- Restis nur unu persono. - Only one person remained.
+    
+    The person is the one who performed the action "resti". Don't say: Restis nur unu persono**n**.
+    
+- Aperis nova eldono de la libro. - A new edition of the book came out.
+    
+    Don't say: Aperis nova**n** eldono**n** de la libro.
+    
+- Mankas al ni mono. - We are out of money.
+    
+    Don't say: Mankas al ni mono**n**.
+
+### Measure
+Adjects and supplements of measure often have an N-ending.
+
+#### Measurement of time
+An N-ending on an expression involving time can show measurement of length of time, duration, or frequency. These expressions answer the questions: kiel longe? (how long?), (dum) kiom da tempo? (for how long?), kiel ofte? (how often?), and so forth.
+
+An N-clause measuring time is usually an adject of a verb:
+
+- Mi veturis **du tagojn** kaj **unu nokton**. = ...dum du tagoj kaj unu nokto. - I travelled two days and one night. = for two days and one night.
+- Li estas morte malsana, li ne vivos pli, ol **unu tagon**. - He is deathly ill. He will not live for more than one day.
+- La festo daŭris **ok tagojn**. - The festivity lasted eight days.
+- Ŝi aĝis **tridek jarojn**. - She was thirty years old.
+- La horloĝo malfruas **kvin minutojn**. - The clock is five minutes slow.
+
+An N-clause measuring time can also be a supplement to an adjective or an adverb:
+
+- Li estis **dudek du jarojn** aĝa. = ...je dudek du jaroj aĝa. - He was twenty-two years old.
+- La parolado estis **du horojn** longa. - The speech was two hours long.
+- Tiu ĉi vojo estas **milojn da kilometroj** longa. - This road is thousands of kilometers long.
+- **Unu momenton** poste ŝi malaperis malantaŭ ili. - One moment later she disappeared behind them.
+    
+    Unu momenton(one moment) shows the amount of time which passed after something.
+    
+- Ŝi estas **du jarojn** kaj **tri monatojn** pli aĝa ol mi. - She is two years and three months older than I.
+
+A time-indicating phrase with N can also be combined with a temporal post or a temporal antaŭ to show the time: **Du tagojn** post tio ŝi forveturis Norvegujon. Pasis du tagoj post "tio".
+
+#### Various measures
+Other measures work the same way as measures of time. It could be a measurement of spatial length, height, width, distance, depth, weight, cost, etc. They answer the questions how much?, how many?, how far?, how long?, how high?, how deep?, how heavy?, etc.:
+
+- Ĝi kostas **dek mil vonojn**. - It costs ten thousand won.
+    
+    (The won is a unit of Korean currency)
+    
+- Vi devas kuri **pli ol dek kilometrojn**. - You have to run more than ten kilometers.
+- La vojo larĝis **dudek metrojn** aŭ iom pli. - The road was twenty meters wide or a bit more.
+- La monto Everesto estas **ok mil okcent kvardek ok metrojn** alta. - Mount Everest is eight thousand eight hundred and forty-eight meters high.
+- Ili staris nur **kelkajn metrojn** for de mi. - They stood only a few meters away from me.
+- La domo estis **ducent metrojn** distanca. - The house was two hundred meters away.
+
+#### Measure without a role marker
+A measurement can also appear in a sentence function that does not have a role marker: **Dek jaroj** estas tre longa tempo. (Ten years are a very long time.) Dek jaroj is the subject here. Pasis **du tagoj**. (Two days went by) Du tagoj acts as a subject.
+
+### Point in time
+A clause with an N-ending can be a circumstantial complement (adjekto) that shows a point in time. This N-adject answers the questions: when?, on what date?, on what day?, in what year?, which time?, and so forth. One may say, that this sort of N-ending substitutes for a preposition of time, usually en (in):
+
+- **Unu tagon** estis forta pluvo. = En unu tago... - One day there was heavy rain. = On one day ...
+- **Ĉiun monaton** li flugas al Pekino. - Every month he flies to Beijing.
+- Georgo Vaŝington estis naskita **la dudek duan** de Februaro de la jaro mil sepcent tridek dua. = ...en la dudek dua tago de Februaro... - George Washington was born on the twenty-second of February in the year 1732. = on the twenty-second day of February...
+
+With days of the week, the accusative noun indicates a specific, known day: dimanĉon = "on a certain known Sunday", even if la isn't used. The adverbial form of the weekday normally shows that we are talking about those type of days: dimanĉe "on Sundays, on every Sunday": Mi alvenos en Lyon **lundon** la 30-an de Aŭgusto.
+
+In expressing [time of day](https://lernu.net/gramatiko/nombraj_vortoj#horoj) the word [je](https://lernu.net/gramatiko/je), should be used, especially if the word horo (hour) estas is left out, to avoid confusing the hour with the [date](https://lernu.net/gramatiko/nombraj_vortoj#datoj):
+
+- Tio okazis **la dekan**. = This happened on the tenth day of the month.
+- Tio okazis **je la deka**. = This happened at the tenth hour of the day.
+
+#### Point in time without a grammatical marker
+A point in time can also appear in a sentence function without a role marker: Hodiaŭ estas **sabato**, kaj morgaŭ estos **dimanĉo**. Sabato and dimanĉo are the grammatical subject of the sentence.
+
+### Direction
+N-adjects and N-supplements can show direction. In those cases, they answer the questions to which place?, in which direction?, and so forth.
+
+#### N-ending used alone
+- Morgaŭ mi veturos **Kinŝason**. = ...al Kinŝaso. - Tomorrow I will travel to Kinshasa.
+- La vagonaro veturas de Tabrizo **Teheranon**. - The train travels from Tabriz to Teheran.
+
+The directional N-ending without a preposition is used only to express going inside of something. We do not say iri muron, iri kuraciston, but rather iri al muro, al kuracisto. In effect, a directional N by itself is in most cases used only with place names (mainly names of cities).
+
+#### N with en, sur and sub
+A directional N-ending is most commonly used with en (in), sur (over), and sub (under), the three most important **[prepositions of location](https://lernu.net/gramatiko/lokaj_prepozicioj)**. When en, sur, and sub show simple position, they are used without the N-ending. But when showing that something is moving to that place, the phrase must be completed with a role marker that shows direction. In theory, prepositions like al (to) (al en, al sur, al sub) may be used, but in practice, the N-ending is always used instead:
+
+- sur la tablo - on the table = in a position on the table → sur la tablo**n** - onto the table = to a position on the table, onto the table
+- sub la granda lito - under the big bed = in a position under the big bed → sub la granda**n** lito**n** - towards and under the big bed = to a place under the big bed, movement towards and under the big bed
+- La hundo kuras **en nia domo**. - The dog runs in our house.
+    
+    The dog is in the house and runs around there.
+    
+- La hundo kuras **en nian domon**. - The dog runs into our house.
+    
+    The dog is outside of the house but now runs into the house.
+    
+- Mi metis ĝin **sur vian tablon**. - I placed it onto your table.
+    
+    It was in another place and I moved it to the surface of the table.
+
+With locational prepositions other than en (in), sur (on), and sub (under), the directional N-ending isn't normally used; instead, the context shows the movement in a direction. But the directional N can be with other prepositions of location, if it helps make the meaning clear:
+
+- La hirundo flugis **trans la riveron**, ĉar trans la rivero sin trovis aliaj hirundoj. - The swallow flew across the river, because across the river there were other swallows.
+- La sago iris **tra lian koron**. ≈ La sago plene penetris lian koron. - The arrow went through his heart. ≈ The arrow fully penetrated his heart.
+    
+    When we use the directional N-ending after tra we emphasize that the movement went completely through and passed out of the location.
+    
+- La vojo kondukis **preter preĝejon**. - The road passed by a church.
+    
+    When we use a directional N-ending after preter we stress that the movement of passing by continues away from the place mentioned.
+    
+- Siajn brakojn ŝi metis **ĉirkaŭ mian kolon**. - Her arms she placed around my neck.
+    
+    Sometimes we also use ĉirkaŭ + an N-ending to show movement towards a place which is reached by movement around something else: Li kuris **ĉirkaŭ la angulon de la domo**.
+    
+- Li kuris **kontraŭ la muron** kaj vundis sin. - He ran against the wall and hurt himself.
+    
+    To show that the movement towards a place has reached its destination and made contact with it, we can use kontraŭ plus an N-ending.
+    
+- Gardu vin, ke vi ne venu plu **antaŭ mian vizaĝon**. = ...al loko antaŭ mia vizaĝo. ...al antaŭ mia vizaĝo. - Make sure I don't see your face again. (litterally Watch yourself that you do not come anymore before my face.) =...to a place before my face.
+- Mi estis en la urbo kaj iris poste **ekster ĝin**. = ...al ekster ĝi. - I was in town and later went out of it. = ...towards outside of town.
+- Li iris **inter la patron kaj la patrinon**. - He walked (up to and) between his father and his mother.
+    
+    The aimed for destination of the walk was a place between his father and his mother.
+    
+- Morgaŭ mi venos **ĉe vin**. - Tomorrow I'll come to you.
+    
+    Traditionally we prefer: Morgaŭ mi venos **al vi**.
+
+In some cases, the directional N-ending is not normally used, because the destination of the phrase is understood only through context, but not stated. This expression would have an N-ending, if it were included in the sentence:
+
+- Jakob enfosis ilin **sub la kverko**. - Jacob buried them under the oak tree.
+    
+    The real destination is the ground: Jakob enfosis ilin **en la grundon** sub la kverko.
+    
+- Oni metis **antaŭ mi** manĝilaron. = Oni metis **sur la tablon** antaŭ mi manĝilaron. - One placed before me cutlery. -Cutlery was placed on the table in front of me.
+
+However, it would not be wrong to say sub la kverkon (under the oak) and antaŭ min (in front of me, before me), because these expressions can also be regarded as destinations in those sentences.
+
+Prepositions of location are often used in a figurative sense. Something abstract, without a location, is expressed as a location. A directional N-ending may also be used in these cases to express a figurative direction; for example: Mi ŝanĝos ilian malĝojon **en ĝojon**.
+
+Some prepositions in themselves show direction: [al, ĝis, el](https://lernu.net/gramatiko/direktaj_prepozicioj) and [de](https://lernu.net/gramatiko/de). These prepositions never show position. After these prepositions don't use the N-ending: al la urbo, ĝis la fino, el la lernejo, de la komenco.
+
+#### N after adverbs of location
+The N ending can also be used after locational [adverbs with an E-ending](https://lernu.net/gramatiko/adverboj), and after locational [table words](https://lernu.net/gramatiko/tabelvortoj), to show movement in the direction of a place.
+
+- hejme = in the home → hejmen = to home, (homeward)
+- urbe = in the city → urben = into the city
+- ekstere = outside of something → eksteren = to the outside of something
+- tie = in that place → tien = to that place, in that direction
+- kie = in which place → kien = to which place, in which direction
+- ĉie = in every direction → ĉien = to every place, in every direction
+- ie = in some place → ien = to some place, in some direction
+- nenie = in no place → nenien = to no place, in no direction
+
+### N for other meanings
+N-adjects and N-supplements are most frequently used to show [measure](https://lernu.net/gramatiko/akuzativo#mezuro), [point in time](https://lernu.net/gramatiko/akuzativo#tempopunkto), or [direction](https://lernu.net/gramatiko/akuzativo#direkto), but in some cases, the part of the phrase with the N-ending indicates another role, for which a preposition would normally be used:
+
+- Mi ridas **je lia naiveco**. = Mi ridas **pro lia naiveco**. = Mi ridas **lian naivecon**. - I laugh at his naivety.
+- Neniam ŝi miros **pri/pro sia propra malaltiĝo**. → Neniam ŝi miros **sian propran malaltiĝon**. - She will never wonder about her own demotion.
+
+Theoretically, prepositions could always be replaced with an N, if it doesn't make the meaning unclear. N is used instead of [je](https://lernu.net/gramatiko/je) (at) especially frequently. The rule regarding clarity, however, almost always precludes the use of N instead of the prepositions [de](https://lernu.net/gramatiko/de) (of) and [el](https://lernu.net/gramatiko/direktaj_prepozicioj) (from, out of), which show movement away from something, because N itself is a role marker that shows movement towards something. In some cases, however, sentences like Ili eliris la buson (They exited the bus) can be encountered. In that case, the N-ending shows an object: the bus is the object of the action "eliri" (to exit). It is much clearer, and therefore preferable, to say Ili eliris el la buso. (They exited out of the bus).
+
+### Accusative and proper names
+The accusative is used with fully esperantized proper names according to all of the aforementioned rules:
+
+- Mi vidis **Karlon**. - I saw Karlo
+- **Elizabeton** mi renkontis hieraŭ en la urbo. - I met Elizabeth yesterday in town.
+- **Tokion** ni tre ŝatas. - Tokyo, we really like.
+
+Non-esperantized proper names can appear without the O-ending. The N-ending is left off of these names, even if in principle, their role in the sentence requires this ending:
+
+- Ni renkontis **Zminska**. - We met Zminska.
+    
+    The Polish name is a grammatical object but without the N-ending.
+    
+- Ŝi ludis **la Prière d'une vierge**. - She played La Prière d'une vierge.
+    
+    The French name of a piece of music is a grammatical object but without the N-ending.
+    
+- Li admiras **Zamenhof**. - He admires Zamenhof.
+    
+    The name Zamenhof is a grammatical object without an N-ending.
+
+If the name can accept an N-ending (if it ends in a vowel), then the ending can, of course, be added. The O-ending can also be added to a foreign name. If an O-ending is used, then an N-ending must also be used, if the word's role in a sentence requires it. The name may also be preceded by a title or another expression capable of receiving an N-ending.
+
+- Ĉu vi konas **Anna**? - Do you know Anna?
+    
+    The name Anna is a grammatical object without an N-ending.
+    
+- Ĉu vi konas **Annan**? - Do you know Anna?
+    
+    The name Anna is a grammatical object with an N-ending.
+    
+- Ĉu vi konas **mian amikinon Anna**? - Do you know my friend Anna?
+    
+    Anna is a [predicate nominative](https://lernu.net/gramatiko/nominativo#nominacio) of my friend, and will definitely not have an N-ending here.
+    
+- Li renkontis **Vigdís Finnbogadóttir**. - He met Vigdís Finnbogadóttir.
+    
+    The Icelandic name _Vigdís Finnbogadóttir._ is a grammatical object without an Esperanto ending.
+    
+- Li renkontis **Vigdíson Finnbogadóttir**. - He met Vigdís Finnbogadóttir.
+    
+    The first name has an O-ending and an N-ending. Often we Esperantize only a person's first name, or we add an O-ending to the non-esperantized form of the first name, and leave the last name in its original form without an Esperanto ending. The N-ending is then only used with the first name. This however is not a rule, only a custom. (One could also write _Vigdís_-on with a hyphen.)
+    
+- Li renkontis **prezidanton Vigdís Finnbogadóttir**. - He met the chairperson Vigdís Finnbogadóttir.
+
+## Prepositions
+Prepositions are particles that are put in front of clauses, to show their role in the sentence.
+
+Prepositions are normally placed before nouns or [pronouns](https://lernu.net/gramatiko/pronomoj), but they can also be used with [infinitive verbs](https://lernu.net/gramatiko/verboj#infinitivo), [subclauses](https://lernu.net/gramatiko/subfrazoj), and [adverbs of quantity](https://lernu.net/gramatiko/kvantaj_vortoj). In some cases a preposition is used before an adverb of location or time. In those cases, the preposition makes the location or time more specific.
+
+The following particles are prepositions: al, anstataŭ, antaŭ, apud, ĉe, ĉirkaŭ, da, de, dum, ekster, el, en, ĝis, inter, je, kontraŭ, krom, kun, laŭ, malgraŭ, per, po, por, post, preter, pri, pro, sen, sub, super, sur, tra and trans.
+
+### Independent prepositions
+After a preposition there is normally a clause to which the preposition relates. Without a clause following, the preposition would not make sense: sur **la tablo**, en **mia domo**, ekster **tiu ĉi ĉambro**, dum **la paŭzo**, anstataŭ **tio**, krom **Petro** etc.
+
+If words are intended to be left out after a preposition (to be understood through context), the preposition must be used with an E-ending, because the preposition then becomes its own clause, acting as an adverb:
+
+- Li staras apud mi. → Li staras **apude**. - He is standing beside me. → He is standing alongside.
+- Ŝi sidas ekster la domo. → Ŝi sidas **ekstere**. - She is sitting outside of the house. → She is sitting outside.
+- Tio okazis dum la paŭzo. → Tio okazis **dume**. - That happened during the break. → That happened in the duration.
+- Tio okazos post la kongreso. → Tio okazos **poste**. - That will happen after the congress. → That will happen later.
+
+If the adverb shows a location, it can accept the [N-ending to show movement to the location](https://lernu.net/gramatiko/akuzativo#direkto):
+
+- Li sidas ekster la domo. → Li sidas ekstere. → Li iras **eksteren**. = ...al ekstera loko (al loko ekster la domo). - He is sitting outside the house. → He is sitting outside. → He is going outside. = ...to an outside location (to a place outside of the house).
+
+If in some cases the original clause acts as an adjective, the A-ending is used after the preposition:
+
+- Li loĝas en domo apud mia domo. → Li loĝas en **apuda** domo. ...en domo **apuda**. - He lives in a house next to my house. → He lives in an adjacent house. ...in a house next to mine.
+
+But you can also use a location adverb or temporal adverb in those cases: Li loĝas en domo **apude**. = Li loĝas en domo, kiu troviĝas apude.
+
+For some reason, some prepositions practically never appear with an E-ending or A-ending. For example, we almost never say paroli prie = "talk about that", iri dee = "to go from the designated place", ala veturo = "a drive to the designated place", proa agado = "an action on account of that".
+
+### Locational prepositions
+Prepositions of location show position in space, on a surface, on a line, and so forth. Many of them are also used to refer to time, because time is often visualized as a line. Other ideas are also shown figuratively as locations. For some prepositions of location, the locational meaning is the base meaning, whereas other usages can be more frequently seen in practice.
+
+**antaŭ**
+
+Position on that side which is the closest to the speaker, or on the main side, or the side that is most important: **Antaŭ la domo** staras arbo. (In front of the house stands a tree.) The front side of a person or animal is the side that has the face and eyes: Li haltis **antaŭ ŝi**. (He stopped before her.)
+
+Position in an order: position which is followed by another: Mi iras **antaŭ vi**. (I'm going before you.)
+
+A point in time earlier than another time: **Antaŭ tri tagoj** mi vizitis vian kuzon. (Three days ago I visited your cousin.)
+
+**malantaŭ**
+
+Position on the opposite side compared to the front: Li estis kaŝita **malantaŭ kurteno**. (He was hidden behind a curtain.) Tuj **malantaŭ si** ŝi aŭdis viran voĉon. (Right behind her she heard a male voice.)
+
+**apud**
+
+Position on the side of something. Usually we mean the right of the left side (not the front or the back.): **Apud la skribotablo** estis paperkorbo. Beside the desk was a wastepaper basket.) Li staris tutan horon **apud la fenestro**. (He stood for a whole hour beside the window.)
+
+**ĉe**
+
+A very close position (touching or not touching). The meaning of ĉe varies according to the context. Often ĉe simple denotes a general location without a precise indication as to its position: **Ĉe la angulo de la strato** ŝi haltis. (At the corner of the street she stopped.) La gastoj tranoktos **ĉe mi** (= en mia hejmo). (The guests will stay overnight at my place.)
+
+Extreme temporal proximity: **Ĉe la komenco de la tagiĝo** la arbaro aperis bele kovrita de prujno. (At the beginning of daybreak the tree appeared beautifully covered with hoar-frost.
+
+**ĉirkaŭ**
+
+Position on each side of something: La rabistoj sidis en rondo **ĉirkaŭ la fajro**. (The thieves sat in a circle around the fire.)
+
+Approximate time:**Ĉirkaŭ la mateno** la ventego finiĝis. (Around morning the strong wind ended.)
+
+**ekster**
+
+Position outside of something: Mi staras **ekster la domo**, kaj li estas interne. (I'm standing outside of the house, and he is inside.)
+
+**en**
+
+Position inside: **In the room** were three women.
+
+Location regarded as a space when in fact it is perhaps closer to a surface: La rusoj loĝas **en Rusujo**. (The Russians live in Russia.)
+
+Time regarded as if it were space, inside of which something happens. The "inside" of this time period is between the beginning and the end of the period: **En la tago** ni vidas la helan sunon, kaj **en la nokto** ni vidas la palan lunon kaj la belajn stelojn. (In the daytime we see the bright sun, and in the night we see the pale moon and the beautiful stars.)
+
+**inter**
+
+Position on the sides of which are two or more other things: Sur la kameno **inter du potoj** staras fera kaldrono. (On the mantle, between two jugs, stands an iron cauldron.) Ni vojaĝis **inter Pekino kaj Ŝanhajo**. (We travelled between Beijing and Shanghai.) Estas granda diferenco **inter li kaj mi**. (There is a big difference between him and me.)
+
+Choice (between two or among more): Ni elektis **inter Ĉina restoracio kaj Itala restoracio**. (We chose between the Chinese restaurant and the Italian restaurant.)
+
+Belonging to a group: **Inter miaj amikoj** estas multaj Sud-Amerikanoj. (Among my friends are many South Americans.) Note: English differentiates "between" from "among". "Inter" covers both.
+
+Imprecise point in time after one thing and before another: Estis **inter la sepa kaj oka horoj** vespere. (It was between seven and eight o'clock in the evening.)
+
+**kontraŭ**
+
+Position of something whose front is directed at the front of someone/somebody else. The two, therefore, have their front facing each other facing in opposite directions with space in between them: La reĝo sidis sur sia reĝa trono **kontraŭ la enirejo** de la domo. (The king sat on his regal throne opposite the entrance of the house.)
+
+Something towards which something moves facing it:Ili promenis man-en-mane **kontraŭ la leviĝanta suno**. (They strolled hand in hand towards the rising sun.)
+
+Enmity, disfavour, negativity and the like:Mi ne devas agi **kontraŭ mia konscienco**. (I must not act against my conscience.)
+
+Someone that one gives or receives in exchange:Ili donas konsilojn **kontraŭ kontanta pago**. (They give advice for ready money.)
+
+**post**
+
+A time later than another time:**Post tri monatoj** ili geedziĝos. (In three months they will get married. lit. "after three months")
+
+Position following another: Ili staris en vico unu **post la alia**. (They stood in a queue one after the other.)
+
+Behind something:Ŝi aŭdis **post si** brueton. (She heard behind her a slight noise.) Nowadays we usually use malantaŭ in these cases.
+
+**preter**
+
+Place at the side of which some movement occurs. The movement normally continues away from this place:Li pasis **preter mi** sen saluto. (He passed by me without saying hello.)
+
+**sub**
+
+Place lower than something which is more or less right above it. Sub most often means "malsuper"(below). In that case what is in the lower position does not touch what is found in the higher position: Ĝi kuŝas **sub la tablo**. (It is lying under the table.) Sometimes sub means "malsur" (under). Then the lower item does touch the one above: Sekaj folioj krakis **sub liaj piedoj**. (Dry leaves crackled under his feet.)
+
+A place covered by something without regard to which thing is higher: Ŝi portas la libron **sub la brako**. (She carried the book under her arm.)
+
+**super**
+
+Position higher than something located more or less directly under it. Between the two locations there is usually a space so there is no contact: **Super ni** briletas la steloj. (Above us the stars are shining.) Sometimes there is physical contact, but so unimportant that it is not considered: **Super la tero** sin trovas aero. (Above the earth there is air.) If the contact is important then use sur.
+
+Covering without regard to height or contact: Ŝiaj longaj blondaj haroj pendis **super ŝia nuko**. (Her long blond hair hung over her neck.)
+
+**sur**
+
+Location on the surface of something. Normally it concerns support, attachment, pressure, touching or other important contact. Mostly sur indicates a position higher than the touched surface: **Sur la tero** kuŝas ŝtono. (On the ground lies a stone.) But sur can also indicate a position on a surface without reference to height: Meze **sur la muro** pendis portreto. (In the middle of the wall hung a portrait.)
+
+**tra**
+
+A place inside of which movement takes place. The movement starts outside the thing in question, moves into it, and continues to the other end of it. The movement can also start at one end of the thing and continue to the other end. The movement can continue away from the location or stay in it without going further, according the the context: **Tra la fenestro** la vaporo iras sur la korton. (Through the window the steam goes onto the yard.) La akvo fluas **tra tubo**. (The water flows through a tube.) Often however, the movement, strictly speaking does not go from one end to the other, but in an unspecified manner from place to place inside of the thing: La soldatoj kondukis la arestitojn **tra la stratoj**. (The soldiers led those arrested through the streets.)
+
+During the whole time from the beginning to the end: Ili festis **tra la tuta nokto**. (They celebrated throughout the whole night.)
+
+**trans**
+
+Position "on the other side of". We use trans (across) when we need to go over or on something to reach the other side: Li loĝas **trans la strato**. (He lives across the street.)
+
+**maltrans**
+
+Position "on this side of". We use maltrans very rarely. More commonly we use the expression ĉi-flanke de: Prefere restu **maltrans la rivero**. = Prefere restu **ĉi-flanke de la rivero**. (Preferably stay on this side of the river.)
+
+Prepositions of location are often used with a [directional N-ending](https://lernu.net/gramatiko/akuzativo#direkto) to show movement to a location or position.
+
+### Directional prepositions

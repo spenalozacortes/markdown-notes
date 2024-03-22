@@ -249,7 +249,7 @@ public class RunnableTask implements Runnable {
 
 }
 ```
-#aqui
+
 ### The Fork-Join Framework
 A similar interface to the executor service was added in Java 7 that included functionality to split a task into smaller subtasks and re-enqueue them into the thread pool. This is particularly useful for more intensive tasks and actually implements parallelism to do it.
 
@@ -655,7 +655,7 @@ At this point, we’re ready to start Tomcat and see our web page. Let’s execu
 [http://localhost:8080/icecream-app/home](http://localhost:8080/icecream-app/home)
 
 Note that the path to our servlet is [http://localhost:8080/icecream-app/home](http://localhost:8080/icecream-app/home) instead of [http://localhost:8080/home](http://localhost:8080/home) (this will give us a 404 not found error) because we need to specify the context path of our `/home` path we defined in our `web.xml`. The context path in this example is the name of our web application project directory, `icecream-app`.
-#aqui
+
 ## Servlet Architecture and Lifecycle
 
 ### CGI vs Java Servlets

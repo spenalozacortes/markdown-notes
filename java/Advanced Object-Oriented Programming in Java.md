@@ -743,8 +743,7 @@ To ensure effective exception handling, it is important to follow best practices
 3. **Keep exception handling minimal**: Only catch exceptions that you can handle effectively. Rethrowing or propagating exceptions may be necessary in some cases to allow higher-level code to handle them appropriately.
 4. **Clean up resources**: Use the `finally` block to release resources that were acquired within a `try` block, ensuring proper cleanup regardless of whether an exception occurs.
 5. **Log exceptions**: Logging exceptions helps in diagnosing and troubleshooting issues. Include relevant information such as stack traces, input values, and any other contextual details that may assist in resolving the problem.
-#aqui 
-
+ 
 ```java
 public class FileProcessor {
     public void processFile(String fileName) throws IOException {

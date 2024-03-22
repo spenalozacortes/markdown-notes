@@ -207,7 +207,7 @@ Developers can start implementing an API much faster by coding the API directly 
 
 ##### When Developing Internal APIs
 The Code First approach affords speed, automation, and reduced process complexity, at the cost of good developer experience. If the API will only be consumed by the team or company building it, then the Code First approach is an ideal solution. This is especially true if the API developed is small, with only a few endpoints being used internally.
-#aqui
+
 ## Introduction to YAML
 
 ### Introduction
