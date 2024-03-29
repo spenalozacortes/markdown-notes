@@ -696,6 +696,7 @@ goat.diet();
 The `this` keyword references the *calling object* which provides access to the calling object’s properties. In the example above, the calling object is `goat` and by using `this` we’re accessing the `goat` object itself, and then the `dietType` property of `goat` by using property dot notation.
 
 ### Arrow Functions and `this`
+
 ```js
 const goat = {
   dietType: 'herbivore',
@@ -1152,8 +1153,6 @@ const summedNums = numbers.reduce((accumulator, currentValue) => {
 console.log(summedNums) // Output: 17
 ```
 
-![[Pasted image 20230216131935.png]]
-
 The callback function has two parameters, `accumulator` and `currentValue`. The value of `accumulator` starts off as the value of the first element in the array and the `currentValue` starts as the second element.
 
 As `.reduce()` iterates through the array, the return value of the callback function becomes the `accumulator` value for the next iteration, `currentValue` takes on the value of the current element in the looping process.
@@ -1169,8 +1168,6 @@ const summedNums = numbers.reduce((accumulator, currentValue) => {
  
 console.log(summedNums); // Output: 117
 ```
-
-![[Pasted image 20230216132313.png]]
 
 ### Array.prototype.some()
 The `some()` method tests whether at least one element in the array passes the test implemented by the provided function. It returns `true` if, in the array, it finds an element for which the provided function returns `true`; otherwise it returns `false`. It doesn't modify the array.

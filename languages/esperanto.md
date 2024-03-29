@@ -1701,3 +1701,496 @@ Position "on this side of". We use maltrans very rarely. More commonly we use 
 Prepositions of location are often used with a [directional N-ending](https://lernu.net/gramatiko/akuzativo#direkto) to show movement to a location or position.
 
 ### Directional prepositions
+The basic and primary meaning of the prepositions al (to), el (from, out of), and ĝis (until, up to) is direction, but they are also used for various other meanings:
+
+**al**
+
+Goal of movement:Mi venas de la avo, kaj mi iras nun **al la onklo**.
+
+Direction without movement: Ŝi apogis sin per la mano **al la muro**.
+
+The person who receives something, or who profits/loses from an action: Donu **al la birdoj** akvon. Diru **al mi** vian nomon. Ŝi kombas **al si** la harojn. Pardonu **al mi**! Lia babilado malhelpis **al mi** fari la hejmtaskojn.
+
+The person who experiences or feels something: Ŝajnas **al mi**, ke vi mensogas.
+
+The owner etc. (with aparteni): La rozo apartenas **al Teodoro**.
+
+The result of a transformation or change:Li disrompis ĝin **al mil pecoj**. Normally we use [en + N-ending](https://lernu.net/gramatiko/lokaj_prepozicioj#prepozicio-en): Li disrompis ĝin **en mil pecojn**.
+
+Increase, addition etc. (with aligi, aliĝi, aldoni etc.): Ĉu vi jam aliĝis **al la kongreso**?
+
+That which is under consideration when something is close or similar: Proksime **al la angulo** staris aŭto. Tiu nubo similas **al ĉevalo**.
+
+**el**
+
+Movement away from inside to outside: **El la tubo** fluis akvo. Li eliris **el la ĉambro**.
+
+Lineage, origin, source, previous state, cause: **El kiu lando** vi venas? Ŝi tradukis la libron **el la Ĉina lingvo**. **El la knabo** fariĝis junulo. **El surprizo** (= pro surprizo) li preskaŭ falis. To express a cause we nowadays prefer to use pro.
+
+Material, components: La skatolo estis farita **el ligno**. Unu minuto konsistas **el sesdek sekundoj**.
+
+Group or a mass when one distinguishes or separates some individuals out of the group, or a part out of a mass:**El ĉiuj miaj infanoj** Ernesto estas la plej juna. Trinku **el la vino**, kiun mi enverŝis.
+
+**ĝis**
+
+A location which a movement reaches but doesn't go past: Mi akompanis ilin **ĝis ilia domo**.
+
+Limit or border in space, on land etc: La tuta lago **ĝis la transa bordo** estas kovrita de glacio.
+
+Time, measurement, degree, level or state which something attains but doesn't go beyond: Mi laboras de frua mateno **ĝis malfrua vespero**. La tasko estu preta **ĝis la fino de Junio**. La prezo falis **ĝis du eŭroj**.
+
+Also [the accusative N-ending](https://lernu.net/gramatiko/akuzativo#direkto) and [the preposition de](https://lernu.net/gramatiko/de) (of) are directional role markers.
+
+### Je
+Je is a preposition without a defined meaning. The original intent was that je be used in all abstract situations, for which another preposition didn't exist. For that reason, early Esperanto speakers used je very frequently. Now, je is used much less, and it mainly shows [time of day](https://lernu.net/gramatiko/je#je-horo) and [measure](https://lernu.net/gramatiko/je#je-mezuro). Generally, je should be avoided when a better alternative exists.
+
+The N-ending can often be used instead of je, especially for [measure](https://lernu.net/gramatiko/akuzativo#mezuro) and [point in time](https://lernu.net/gramatiko/akuzativo#tempopunkto).
+
+#### Time of day and other points in time
+- Ni prenos la buson **je dudek (minutoj) antaŭ la deka (horo)**. - We will take the bus at twenty to ten.
+- Tio okazis **je Pasko**. - That happened at Easter.
+- **Je la lasta fojo** mi permesas al vi fari tion. - For the last time I'll allow you to do that. (Note that Esperanto uses the present tense here whereas English tends to use the future.)
+
+#### Measure
+- Vi certe estas **je duono da kapo** pli alta ol mi. = ...duonon da kapo pli alta ol mi. - You're certainly taller than I by half a head. =...half a head taller than I.
+
+The [N-ending](https://lernu.net/gramatiko/akuzativo#mezuro) is ordinarily used to show measure.
+
+#### Lack, abundance, and longing
+- Ĝi estas libera **je mankoj**. - It is free of faults.
+    
+    Or ...de mankoj
+    
+- Abram estis tre riĉa **je brutoj, arĝento, kaj oro**. - Abram was very rich in cattle, silver and gold.
+- Glaso da vino estas glaso plena **je vino**. - A glass of wine is a glass full of wine.
+    
+    Or ...plena de vino
+    
+- Mi sopiras **je mia perdita feliĉo**. - I sigh for my lost happiness.
+    
+    Or ...mian perditan feliĉon / ...al mia perdita feliĉo.
+
+#### State of body or mind
+- Ili suferas **je astmo**. - They suffer from asthma.
+- Ŝi gravediĝis **je ĝemeloj**. - She got pregnant with twins.
+- Li malsaniĝis **je profunda melankolio**. - He became ill with profound melancholy.
+
+#### Part of the body affected by hold, touch, sickness, etc
+- Li kaptis min **je la brako**. - He caught me by the arm.
+    
+    Je la brako indicates my arm. You can also say ĉe la brako. To indicate his arm (which he uses to catch me), we use per: Li kaptis min je la maldekstra brako **per sia dekstra mano**.
+    
+- Li estas malsana **je la brusto**. - He has a chest condition.
+
+#### Various fixed expressions
+- Ŝi kredas **je Dio**. - She believes in God.
+    
+    Kredi je iu or je io = "to believe that someone or something really exists". Kredi ion, al io, pri io = "to believe that that is true". Kredi al iu = "to believe that this person is telling the truth".
+    
+- **Je mia miro** la afero sukcesis. = La afero sukcesis, kio mirigis min. - To my astonishment the matter succeeded. = The matter succeeded, which astonished me.
+- Mi vetis kun ŝi **je dek dolaroj**. - I made a bet with her for ten dollars.
+    
+    The winner of the bet will win the ten dollars. You can also use pri.
+
+### De
+The preposition de has many meanings. Because of the diversity of meanings, there can sometimes be doubt as to the correct interpretation of an expression. In those cases, various clarifying elements may be added, or another preposition may be chosen.
+
+#### Movement away from something
+The basic meaning of the preposition de is a place where movement begins:
+
+- Mi venas **de la avo**, kaj mi iras nun al la onklo. - I'm coming from my grandfather and I'm now going to my uncle.
+- La vento forblovis **de mia kapo** la ĉapon. - The wind blew my hat off my head.
+- Ilia vojaĝo **de Delhio** al Kalkato estis tre longedaŭra. - Their trip from Delhi to Calcutta was very long.
+- Rekta linio estas la plej mallonga vojo **de unu punkto** al alia. - A straight line is the shortest route from one point to another.
+- For **de tie ĉi**! - Away from here!
+
+In case more clarity is needed you can say for de or disde: La polico prenis la ŝtelitan monon **for de la rabisto** / **disde la rabisto**. If you were to say: ...la ŝtelitan monon **de la rabisto**, one might perhaps think that we are using the [possessive de](https://lernu.net/gramatiko/de#aparteno): "...la ŝtelitan monon, kiu apartenis al la rabisto."
+
+#### Origin, cause
+De can also show origin or cause:
+
+- **De la patro** mi ricevis libron, kaj **de la frato** mi ricevis plumon. - From my father I got a book, and from my brother I got a pen.
+- La hebreoj estas Izraelidoj, ĉar ili devenas **de Izraelo**. - The Hebrews are Israelites because they originate from Israel.
+- Francisko **de Asizo** = this Francis who comes from Assisi = Francisko [**el**](https://lernu.net/gramatiko/direktaj_prepozicioj#prepozicio-el) Asizo - Francis of Assisi
+- Li paliĝis **de timo** kaj poste li ruĝiĝis **de honto**. = ...pro timo... pro honto. - He paled from fear and later blushed for shame.= ...pro timo... pro honto.
+    
+    For the cause, however, we normally use pro and sometimes [el](https://lernu.net/gramatiko/direktaj_prepozicioj#prepozicio-el).
+    
+- Ebria **de feliĉo**, mi alkroĉiĝis al lia kolo. - Drunken with happiness I hung on his neck.
+
+#### Contrast, difference
+De often shows difference, contrast, distinguishing one thing from another, belonging, distance, or disconnection:
+
+- Mi povus diferencigi la saĝajn **de la malsaĝaj**! - I can tell the wise from the foolish.
+- Kial Vi kaŝas vin **de mi**? - Why do you hide (yourself)from me?
+- Nun mi iom liberiĝis **de la plej urĝaj el miaj kolektiĝintaj laboroj**. - Now I have freed myself somewhat from some of the most pressing jobs that have been piling up.
+- Ĝi estas libera **de malsanoj**. - It is free of disease.
+- Ili loĝas malproksime **de ni**. - They live far from us.
+
+#### Time
+De can also show the beginning moment of a continuous action or state:
+
+- Li laboras **de la sesa horo** matene. - He works from six o'clock in the morning.
+- **De nun** mi ne plu manĝos viandon. - From now on I will no longer eat meat.
+- Mi konas lin **de longa tempo**. - I have known him for a long time (and still know him). Note that Esperanto uses the present tense here because the action continues into the present.
+
+The expressions ekde and de post can be used to show clearly that a sentence is referring to time.
+
+**ekde**
+
+= from the beginning of
+
+**de post**
+
+= from the end of
+
+When talking about a point in time there is hardly any difference between ekde and de post, but when talking about duration of time, then the difference is greater:de post ŝia vivo = ekde ŝia morto.
+
+#### Possession
+Very often de expresses belonging (= possession, aquisition, proximity, connection, involvement, kinship...):
+
+- Jen kuŝas la ĉapelo **de la patro**. - There lies the father's hat.
+    
+    The hat belongs to the father as a possession or property.
+    
+- La dentoj **de leono** estas akraj. - The teeth of a lion are sharp.
+    
+    The teeth belong to the lion as a body part.
+    
+- Sur la bordo **de la maro** staris amaso da homoj. - On the edge of the sea stood a crowd of people.
+    
+    The edge belongs to the sea, because it is found right next to it.
+    
+- Januaro estas la unua monato **de la jaro**. - January is the first month of the year.
+    
+    Months are parts of the year.
+    
+- La filo **de la reĝo** ŝin renkontis. - The son of the king met her.
+    
+    The son belongs to the king as a relative.
+    
+- Mi legos poemon **de Zamenhof**. - I will read a poem by Zamenhof.
+    
+    The poem belongs to Zamenhof because he wrote it.
+    
+- Glaso **de vino** estas glaso, en kiu antaŭe sin trovis vino, aŭ kiun oni uzas por vino. - A wine glass is a glass which previously held wine, or which is used for wine.
+    
+    The glass belongs to the wine because it is destined to be used for wine.
+    
+- Ŝi estas profesoro **de matematiko**. - She is a professor of mathematics.
+    
+    The professor belongs to mathematics because that is her specialization. One can also use pri.
+    
+- Tiu libro estas **de Karlo**. - That book is Karlo's.
+    
+    More often we use aparteni + al: Tiu libro apartenas al Karlo.
+    
+- Ĝi estas **de mi**. - It is mine.
+    
+    More commonly we say: Ĝi estas mia. Ĝi apartenas al mi.
+
+#### Subject
+A de expression that acts as a supplement to an action noun normally shows the subject (the one performing the action) or the object of the action described by the noun.
+
+- La kanto **de la birdoj** estas agrabla. - The singing of the birds is pleasant.
+    
+    The birds are singing.
+    
+- Li tuj faris, kion mi volis, kaj mi dankis lin por la tuja plenumo **de mia deziro**. - He straightaway did what I wanted and I thanked him for the immediate fulfilment of my desire.
+    
+    He fulfilled my desire.
+
+To check whether it is the **logical subject** we can use fare de (by): Hodiaŭ posttagmeze okazos akcepto **fare de la urbestro**.(This afternoon there will be a reception by the mayor.) The mayor will receive someone.
+
+Note: Some people abbreviate fare de to far, but that word is unofficial and not recommended for use.
+
+Regarding the passive participle, de most frequently shows the subject of the action described, the person or thing performing an action.
+
+- Ŝi estas amata **de ĉiuj**. - She is loved by all.
+    
+    (they)All love her.
+    
+- Li estis murdita **de nekonato**. - He was murdered by an unknown (assailant).
+    
+    An unknown person murdered him.
+    
+- La montoj estis kovritaj **de neĝo**. - The mountains were covered with snow.
+    
+    Snow covered the mountains.
+
+You can also use fare de: La infano estis forprenita **fare de la patrino**. But simply using de usually suffices with passive participles. If another meaning is required of a de-expression with a passive participle, then it is often necessary to cleary indicate this by using disde, for de, ekde or something similar:La infano estis forprenita **disde la patrino**. It was taken away from its mother.
+
+#### Quality
+De sometimes shows a quality, a composition, or a measure:
+
+- Ŝi estas virino **de meza aĝo**. = Ŝi estas mezaĝa virino. - She is a woman of middle age. = She is a middle aged woman.
+- Li havas harojn **de nedifinita koloro**. - He has hair of an indefinite color.
+- Li estas **de meza kresko**. - He is of average height.
+- bukedo **de rozoj** = a bouquet which consists of roses
+- reto **de komputiloj** = a net(work) which consists of computers
+- La knabo havis aĝon **de nur ses jaroj**. - The boy was only six years of age. (lit. The boy had an age of only six years.)
+
+### Da
+The preposition da links an expression of quantity to a substantival part of the sentence that shows something "of substance" (something unlimited and undefined):
+
+| quantity      |     | "substance" |
+| ------------- | --- | ----------- |
+| unu kilogramo | da  | pano        |
+| litro         | da  | lakto       |
+| skatolo       | da  | rizo        |
+| amason        | da  | komencantoj |
+| du milionoj   | da  | rubloj      |
+| iom           | da  | valizoj     |
+| tiom          | da  | feliĉo      |
+| multe         | da  | problemoj   |
+
+The expression of quantity shows how much of something there is. It is a substantival clause, an adverb of quantity, or an adverbial particle of quantity.
+
+The expression "of substance" shows what the quantity consists of:
+
+- En la botelo estas litro **da lakto**. - In the bottle there is a liter of milk.
+- Ŝi aĉetis faskon **da ligno**. - She bought a bundle of wood.
+- Tiu ĉi rivero havas ducent kilometrojn **da longo**. - This river has a length of two hundred kilometers.
+- Mi neniam prenas kun mi multon **da pakaĵo**. - I never take a lot of luggage with me.
+- En la urbo troviĝas multe **da aŭtoj**. - In the city there are many cars.
+- La riĉulo havas multe **da mono**. - The rich person has a lot of money.
+- Li havas pli **da mono**, ol li povas kalkuli. - He has more money than he can count.
+
+[Numerals](https://lernu.net/gramatiko/nombraj_vortoj#numeraloj) — unu, du, tri, kvar, kvin, ses, sep, ok, naŭ, dek, cent, mil — do not require da. They are used as a epithet of a noun:
+
+- Tie loĝas **du** Esperantistoj. - Two Esperantists live there.
+- Mi havas **cent** pomojn. - I have a hundred apples.
+- Tiu ĉi vilaĝo havas **du mil** loĝantojn. - This village has two thousand inhabitants.
+
+[Number words that are nouns](https://lernu.net/gramatiko/nombraj_vortoj#substantivaj-nombrovortoj) like miliono, miliardo, deko and cento however do require da:
+
+- Tiu ĉi urbo havas milionon **da loĝantoj**. - This city has a million inhabitants.
+- En la kesto estas cento **da pomoj**. - In this box there are a hundred apples.
+
+Normally a da expression is found immediately after its expression of quantity, but in some cases the da expression stands alone. Then, normally, the expression of quantity is found in another place in the phrase (due to unusual word order). The word indicating quantity can, however, sometimes be understood through context:
+
+- **Da ŝafoj kaj bovoj** li havis multe. = Li havis multe **da ŝafoj kaj bovoj**. - Of sheep and cattle they have a lot.
+- **Da pulvo** ni havas kiom vi volas. = Ni havas tiom **da pulvo**, kiom vi volas. - Powder we have as much as you want.
+
+#### The N-ending shouldn't be used after da
+After the preposition da never use an N-ending. The substance in a da-expression is never itself the object. However the quantitative expression before da can be the grammatical object:Li portas multon **da valizoj**. (He carries a lot of baggage.)
+
+But the expression of quantity is often a quantitative adverb or a quantitative adverbial particle, which can't receive the N-ending, even when it has the role of the object:
+
+- La riĉulo havas multe **da mono**. = La riĉulo havas multon **da mono**. - The rich person has a lot of money.
+    
+    Absolutely not: La riĉulo havas multe da mono**n**.
+    
+- Kiom **da pano** vi volas? = Kiel grandan kvanton **da pano** vi volas? - How much bread do you want? =What quantity of bread do you want?
+    
+    Absolutely not: Kiom da pano**n** vi volas?
+
+#### When shouldn't da be used?
+If the phrase isn't talking about quantity, measure, or number, but, for example, about type, da should not be used; ordinarily, [de](https://lernu.net/gramatiko/de) is used here:
+
+- Ni manĝis specon **de fiŝo**. - We ate a species of fish.
+    
+    The word speco (species, type) can never indicate a quantity, a measurement or a number. So never say speco da...:
+    
+- Ĉe ni estas manko **de akvo**. - We are out of water.
+    
+    The word manko never expresses a quantity, measurement or number.
+    
+- Pro perdo **de kuraĝo** ili ne venis. - For loss of courage they didn't come.
+    
+    The word perdo never expresses a quantity, measure, or number.
+
+Never use da with relation to an adjective, even if it expresses quantity, measure, or number:
+
+- Ni renkontis **multajn homojn**. (= Ni renkontis multe/multon **da homoj**.) - We met many people.
+    
+    Quantitative adjectives like multa(j), kelka(j), pluraj and others are linked directly to the noun being measured as an epithet without da.
+    
+- La botelo estas plena **de/je akvo**. - The bottle is full of water.
+    
+    The adjective plena in any case does not express a quantity, but a state. Also the adverb plene does not express a quantity: Tie estas plene **de/je homoj**. Never sayplena da... or plene da....
+    
+- Tie ni trovis ĉambron plenan **de/je rubaĵoj**. - There we found a room full of garbage.
+
+A clause with a [determiner](https://lernu.net/gramatiko/difiniloj) — la (the), tiu (that), ĉiu (every), a possessive pronoun... — is defined, and is therefore limited and individualized (non-substantial). Therefore, da should not be used before those clauses; de or el should be used instead.
+
+- Ni manĝis iom **de/el la pano**. - We ate some of the bread.
+- Ili aĉetis kelkajn botelojn **de/el tiuj vinoj**. - They bought a few bottles of these wines.
+
+A [personal pronoun](https://lernu.net/gramatiko/pronomoj#personaj) ordinarily shows one or several defined individuals. Therefore, da should not be used before a personal pronoun; de or el should be used instead:
+
+- Ni manĝis iom **de/el ĝi** (= el la pano). - We ate some of it (=some of the bread).
+- Ili aĉetis kelkajn botelojn **de/el ili** (= de/el tiuj vinoj). - They bought some bottles of them (of those wines).
+
+If the quantity or number is already shown by a [numeral](https://lernu.net/gramatiko/nombraj_vortoj#numeraloj) or adjective, da should not be used; de or el are used instead:
+
+- Ŝi pagis kotizon **de cent eŭroj**. - She paid a few of one hundred euros.
+    
+    The word kotizo does not express a quantity. But you can say ŝi pagis cent eŭrojn **da kotizo**.
+    
+- Ni gustumis tre multe **de unu vino**. - We tasted a lot of one wine.
+- Ili manĝis ĉiom **de/el tuta bovo**. - They ate an awful lot of a whole cow. (Note:ĉiom = every amount, "ĉiom" is rarely used.)
+- Li trinkis iom **de/el kelkaj bieroj**. - He drank a bit out of several beers.
+
+If a singular noun already clearly expresses a limited quantity, da should not be used:
+
+- Unu tago estas tricent-sesdek-kvinono aŭ tricent-sesdek-sesono **de jaro**. - One day is three hundred and sixty-fifth or three hundred and sixty-sixth of a year.
+    
+    Jaro in itself shows a clearly limited time frame.
+    
+- Ili fortranĉis duonon **de centimetro**. - They cut off a half of a centimeter.
+
+Some words express quantity in some cases, and something else in other cases. The intended meaning decides whether da or another preposition should be used:
+
+- Glaso **de vino** estas glaso, en kiu antaŭe sin trovis vino, aŭ kiun oni uzas por vino; glaso **da vino** estas glaso plena je vino. - A wine glass (glaso de vino) is a glass used for drinking wine; a glass of wine (glaso da vino) is a glass full of wine.
+    
+    Glaso in one context represents an item, in another it represents a quantity.
+    
+- Ili konstruis grandan reton **da/de komputiloj**. - They built a great network of computers.
+    
+    If the phrase granda reto (great network) shows how many computers there were, then say da komputiloj. But if granda reto shows how the computers were connected (in the form of a great network), then say de komputiloj.
+
+The use of da, therefore, depends on what the speaker wants to say. To help decide on the correct form, you may imagine a question that the sentence might answer:
+
+- **Kiom** da soldatoj estis? — Estis grupo **da soldatoj**! - How many soldiers were there? — It was a group of soldiers!
+- **Kia** grupo ĝi estas? — Ĝi estas grupo **de soldatoj**! - What kind of group is it? — It's a group of soldiers!
+
+- **Kiom** da rozoj vi volas? — Mi volas bukedon **da rozoj**! - How many roses do you want? — I want a bouquet of roses!
+- **Kian** bukedon vi volas? — Mi volas bukedon **de rozoj**! - What kind of bouquet do you want? — I want a bouquet of roses!
+
+Often you have to check whether the following word is more important (→ da), or the preceding word (→ de). Grupo da soldatoj (a group of soldiers) are first of all soldiers (in sufficient quantity to form a group). Grupo de soldatoj are a group (composed of soldiers). Bukedo da rozoj (a bouquet of roses) are roses (in sufficient quantity to make a bouquet). Bukedo de rozoj (or bukedo el rozoj) is a bouquet (consisting of roses).
+
+The use of the preposition da has evolved and changed somewhat over the history of Esperanto. In old texts, you can find da used in cases where it should be de or el, according to the explanations above.
+
+#### "Da-ism"
+In spoken Esperanto, an incorrect usage of da has become widespread; it may be referred to as "da-ism". In this usage, da is not followed by an expression whose role it can mark. Da ceases to be a preposition. In this case, da only shows that the expression preceding it relates to quantity:
+
+- Mi havas multe **da**.
+- Kiom **da** vi volas? Da in this case does **not** relate to the following vi.
+- Ili kunportis tiom **da**, ke ĉiu povis ricevi iom **da**.
+
+Among other sources, many textbooks are responsible for this misunderstanding; they teach da as if it belonged mainly to the word preceding it. But da refers primarily to what follows it.
+
+Some assert that this usage refers to the normal process of understanding missing words through context:
+
+- Mi havas multe **da mono**. → Mi havas multe **da**. - I have a lot of money.
+- Kiom **da viando** vi volas? → Kiom **da** vi volas? - How much meat do you want?
+
+When we leave out something because it is understood then we also leave out the preposition: Li estas instruisto **de lingvoj**. → Li estas instruisto. Not: Li estas instruisto **de**. Therefore if we want to leave out the word after da, then we also leave out da.
+
+Just simply say: Mi havas multe. (I have a lot) Kiom vi volas? (How much do you want?) Ili kunportis tiom, ke ĉiu povis ricevi iom. (They brought so much that everyone can get some.) Words like multe, tiom and iom are quantities in themselves. They would never take da to express a meaning of quantity. If, however you want to show what the quanity consists of, then use da,but only with a noun following.
+
+### Anstataŭ and krom
+
+#### Anstataŭ
+The preposition anstataŭ (instead of) shows something whose role is fulfilled by something else, in whose place something else is used:
+
+- **Anstataŭ kafo** li donis al mi teon kun sukero, sed sen kremo. - Instead of coffee he gave me tea with sugar, but without cream.
+    
+    He didn't give coffee, but did give tea. The role of coffee (as a beverage) is taken over by tea.
+    
+- Kiam mortis Jobab, ekreĝis **anstataŭ li** Ĥuŝam el la lando de la Temananoj. - After Jobab died, Husham from the land of the Temanites became king. (Genesis 36:34)
+- **Anstataŭ matene**, mi nun hejtados la fornon tagmeze. - Instead of in the morning I will now heat up the oven at noon.
+    
+    I no longer heat in the morning but at noon.
+    
+- **Anstataŭ ĉia respondo** la maljunulino nee skuis la kapon. - Instead of any kind of answer the old lady shook her head indicating no.
+    
+    She did not give a real answer, but a shake of the head served as an answer.
+    
+- Ĉu mi ne helpu vin, **anstataŭ tio, ke vi sola faru la tutan laboron**? - Should I not help you, instead of you doing all the work alone?
+    
+    Now the intention is that you alone should do all the work. Shouldn't I help you with that instead?
+    
+- **Anstataŭ ke ĉiu lernas diversajn lingvojn**, ĉiuj ellernadu unu saman lingvon. - Instead of everyone learning different languages, all should learn one and the same language.
+- La aliaj anasoj preferis naĝadi en la kanaloj, **anstataŭ viziti ŝin**. - The other ducks preferred to swim in the canal instead of visiting her.
+
+#### Krom
+The preposition krom shows a thing that is being considered separately. In practice, this basic meaning gives two meanings: krom indicating **exception** and indication **addition**.
+
+##### Krom of exception
+Krom of exception shows something for which the rest of the phrase is not valid. If the phrase is positive, the sense of the krom of exception is negative. This sort of positive phrase normally contains ĉiu(j) (every, all), ĉio (everything), or tuta (whole, complete):
+
+- Tie estis ĉiuj miaj fratoj **krom Petro**. - There were all my brothers except Peter.
+    
+    Peter was **not** there.
+    
+- Ĉio en ŝi estis juna kaj almenaŭ ŝajne serena, **krom la frunto**. - Everything about her is young and, at least on the surface, serene, except the forehead.
+    
+    The forehead was **not** like that.
+    
+- La tuta teksto estas korekta, **krom unu frazo**. - The entire text is correct, except one sentence.
+    
+    One sentence is **not** correct.
+
+If the phrase is negative (with ne (not), a NENI- word, or sen (without)), the meaning of the krom of exception is positive:
+
+- En la salono estis neniu **krom li kaj lia fianĉino**. - There was nobody in the living room except for him and his fiancée.
+    
+    He and his fiancée were **indeed** there.
+    
+- Ne ekzistas Dio **krom Mi**. - There exists no God except Me. (Deuteronomy 32:39)
+    
+    I am the only God that exists.
+    
+- En la lastaj monatoj mi, **krom miaj profesiaj bezonoj**, preskaŭ neniam eliras el la domo. - In the last months I, except for my professional needs, almost never left the house.
+    
+    In case of professional needs I **do** go out.(For clarity one can say krom **pro** miaj profesiaj bezonoj, but see the following about [anstataŭ and krom + other role indicators](https://lernu.net/gramatiko/anstatau_kaj_krom#aliaj-rolmontriloj).
+    
+- Marta kuŝis sur la malmola litaĵo sen ia alia sento **krom morta laciĝo**. - Martha lay on the hard bedding without any other feeling except that of being dead tired.
+    
+    Dead tired she **did** feel.
+    
+- Mi nenion pli postulus, **krom ke oni montru al mi sindonecon kaj estimon**. - I would demand nothing more, except that one show me devotion and esteem.
+- Ne ekzistas alia bono por la homo, **krom manĝi kaj trinki**. - There is no other good for man(kind), except for eating and drinking.
+
+##### Krom of addition
+A krom of addition shows something that is definitely true. After this expression, something else is added that is also true. Normally, ankaŭ (also) (in some cases ankoraŭ (still) or eĉ (even)) is present in the sentence to emphasize the sense of addition:
+
+- **Krom Petro** tie estis ankaŭ ĉiuj aliaj miaj fratoj. = Aldone al Petro ankaŭ ili estis tie. - Besides Peter there were also all my other brothers. = In addition to Peter, also they were there.
+- Per pruntedono ofte oni perdas **krom sia havo** ankaŭ la amikon. = Aldone al tio, ke oni perdas sian havon, oni perdas ankaŭ la amikon. - By giving a loan one often loses, besides one's possession, also one's friend. = In addition to losing your possession, you also lose your friend.
+- La luno ne leviĝis ankoraŭ sufiĉe alte, **krom tio** estis iom da nebulo. = Aldone al tio, ke la luno ne leviĝis sufiĉe, estis ankaŭ iom da nebulo. - The moon had not yet risen high enough, besides that, there was some fog. = In addition to the fact that, that the moon was not high enough, there was also some fog.
+- **Krom Karlo**, venis eĉ lia tuta familio. = Aldone al tio, ke venis Karlo... - Besides Karlo, his whole family came. = In addition to Karlo coming...
+- **Krom tio, ke li venis malfrue**, li eĉ kondutis tre malbone. - Besides coming late, he even behaved very badly.
+
+##### Risk of misunderstanding
+Normally the context clearly shows whether we are dealing with the krom of addition or of exception. In the presence of ankaŭ, ankoraŭ or eĉ, krom is **without a doubt the krom of addition**. Without the presence of those words, and if the sentence is negative, then krom is **without a doubt the krom of exception.** For absolute clarity in this meaning of exception we can instead use kun escepto de, escepte de, escept(int)e + N-ending, or ekskluzive de. For the meaning of addition we can use aldone al, inkluzive de.
+
+##### Anstataŭ and krom + other role markers
+Anstataŭ (instead of) and krom (except) are somewhat unusual prepositions, because they don't indicate a role in the phrase! They only show that something else has taken on something's role, or that something is considered separately. Normally the context shows whether the role taken over is that of the subject, the object, or some sort of adject. According to necessity, another role marker (such as a preposition or an N-ending) may be added, to show the expression's actual role in the phrase:
+
+- Li faris tion pro ŝi **anstataŭ pro mi**. - He did that on account of her, instead of me.
+    
+    If we were to say anstataŭ mi it would seem that he is substituting me as the agent, that he did it instead of me doing it. Pro shows that mi plays the role of the "cause", and that she replaces me in this role.
+    
+- Petro batis Paŭlon **anstataŭ Vilhelmon**. - Peter hit Paul instead of William.
+    
+    Peter has beaten not William, but Paul. Compare with: Peter has beaten Paul **instead of William**. =& Not William, but Peter has beaten Paul.
+    
+- Ili veturis al Londono **anstataŭ al Bath**. - They travelled to London instead of to Bath.
+- Kiu alportas oferojn al dioj, **krom al la Eternulo sole**, tiu estu ekstermita. - Anyone who brings sacrifices to gods, other than the Lord alone, should be exterminated.(Exodus 22.20)
+    
+    Without al it would seem that only the Lord can bring sacrifices to gods without being exterminated. Al is necessary to make it clear that the Lord is the recipient of the sacrifices.
+    
+- Neniu rajtas uzi la novan aŭton, **krom en la okazo**, se mi tion diros. - Nobody is allowed to use the new car except on my say-so.(lit. except on the occasion if I say that.)
+    
+    En shows that okazo is a temporal circumstantial complement.
+    
+- **Krom Vilhelmon** Petro batis ankaŭ Paŭlon. - Besides William Peter also beat Paul.
+    
+    The N-ending after krom is always superfluous, although not an error in these sentences. No confusion can arise. Here the location of ankaŭ prevents misunderstanding. Compare: **Krom Vilhelmo** ankaŭ Petro batis Paŭlon. = Beside William beating Paul, Peter also did.
+
+Another explanation of this is the implied infinitive:...anstataŭ fari tion pro mi. ...anstataŭ peti de vi... ...anstataŭ bati Vilhelmon. ...anstataŭ veturi al Bath. Krom bati Vilhelmon...
+
+#### Independent use
+If we want to use anstataŭ or krom independently, without mention of that which indicates the role, then we must add the adverb ending: anstataŭe = "instead of that"; krome = "except for that":
+
+- Li ne donis al mi kafon. **Anstataŭe** li donis teon. = Anstataŭ kafo... - He did not give me coffee. Instead he gave tea. = Instead of coffee...
+- **Krome** vi devas pagi por matenmanĝo. = Krom tio, kion vi jam pagis... - Besides that you have to pay for breakfast. = Besides what you already paid...
+
+It's also possible to use an adjective ending:Ni devis almeti la **anstataŭan** radon. = ...that wheel, which serves as a spare to the other wheel. Vi devas pagi **kroman** kotizon. = ...an additional fee, besides the dues you have already paid.
+
+Krome (except) and kroma (additional, other) always have a meaning of addition, never of exception.
+
+### Po
+

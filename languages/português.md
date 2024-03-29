@@ -2757,3 +2757,49 @@ Se quisermos alugar um apartamento com móveis, dizemos **apartamento mobiliado
 > a falésia
 > As falésias de Moher ficam no oeste da Irlanda.
 
+### El bosque
+
+> o arbusto
+> Um arbusto é uma planta pequena que cresce ao redor das árvores.
+> o bosque
+> O bosque é uma área de árvores com pouca sombra.
+> tronco
+> O caminho estava bloqueado por um grande tronco.
+> o musgo
+> O musgo cresce em lugares úmidos e escuros.
+> a floresta tropical
+> A maior floresta tropical do mundo é a Amazônica.
+> a folhagem
+> Aquela árvore tem uma folhagem muito bonita.
+> a samambaia
+> A samambaia é uma planta muito comum em muitas áreas florestais.
+> o orvalho
+> Só vemos orvalho sobre as plantas pela manhã.
+> derrubada de árvores
+> São necessárias licenças para a derrubada de árvores em todos os países europeus.
+
+### ¿Dónde vives?
+
+> vista
+> A vista do topo da montanha é espetacular.
+> pomar
+> Eu tenho um pequeno pomar de maçã no jardim da minha casa.
+> moinho de vento
+> Moinhos de vento modernos geram energia renovável.
+> fazenda
+> agricultor
+> Os agricultores passam muito tempo cultivando a terra.
+> floresta de pinheiros
+> Às margens do rio tem uma linda floresta de pinheiros antigos.
+> colina
+> Os meus amigos moram perto de uma colina onde criam cabras.
+> o arbusto
+> Meu jardim está cercado por arbustos.
+> açude
+> No centro do parque há um açude com alguns patos.
+> pico
+> O grupo de alpinistas alcançou o pico da montanha.
+> a grama
+> Deitar na grama.
+> trilha
+> Atrás da minha casa há uma trilha que chega diretamente até as colinas.

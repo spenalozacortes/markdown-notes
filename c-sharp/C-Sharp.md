@@ -66,7 +66,6 @@ Here’s what you need to know:
 2. The C# community is big: In 2019, [Github ranked C# as the fifth most popular programming language](https://octoverse.github.com/#top-languages) and [StackOverflow ranked it seventh](https://insights.stackoverflow.com/survey/2019#most-popular-technologies).
 3. C# is employable: Thanks to good design and the popularity of frameworks supporting the language, C# can get you access to a lot of great jobs.
 
-
 # Data Types and Variables
 
 ## Data Types and Variables
@@ -957,7 +956,6 @@ IsEven(6);
 - If any of these return `true`, `Array.Exists()` returns `true`.
 
 By the end, `Array.Exists()` returns `true` because `isEven(6)` returns `true`.
-#aqui 
 
 ---
 
@@ -1034,12 +1032,136 @@ bool hasBigDozen = Array.Exists(numbers, (int num) => {
   return isDozenMultiple && greaterThan20;
 });
 ```
+#aqui 
+### Shorter Lambda Expressions
+Here’s what we have to start:
 
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, (int num) => num % 2 == 0 );
+```
 
+The type of `num` is `int`. It’s great to be explicit like this to avoid errors, but some developers wouldn’t include `int`. To them, it’s obvious! Here’s their reasoning:
+
+- The modulo operator (`%`) is only used with numbers, so `num` must be a number
+- The result of the operation `num % 2` is compared to the integer `0`. We can only compare similar types, so num must also be an integer!
+
+Therefore, we can remove `int` without causing any errors:
+
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, (num) => num % 2 == 0 );
+```
+
+When there is just one parameter in a lambda expression, we don’t need the parentheses around the parameter either:
+
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, num => num % 2 == 0 );
+```
+
+### Review
+We learned two shortcuts for defining methods:
+
+_Expression-bodied definitions_ can be used for one-line method bodies.
+
+```c#
+bool isEven(int num) => num % 2 == 0;
+```
+
+_Lambda expressions_ can be used to create an anonymous method:
+
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, (int num) => num % 2 == 0 );
+```
+
+You learned two “sub-shortcuts” within lambda expressions:
+
+- You can remove the parameter type if it can be inferred:
+
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, (num) => num % 2 == 0 );
+```
+
+- You can remove the parentheses if there is one parameter:
+
+```c#
+bool hasEvenNumbers = Array.Exists(numbers, num => num % 2 == 0 );
+```
 
 # Arrays and Loops
 
 ## Arrays
+
+### Building Arrays
+In C#, [arrays](https://www.codecademy.com/resources/docs/c-sharp/arrays) are a collection of values that all share the same data type.
+
+Similar to defining a variable for one piece of data, when we define a variable to hold an array we also have to specify the type:
+
+```c#
+// These arrays store ints, strings, and doubles, respectively
+int[] x; 
+string[] s; 
+double[] d; 
+```
+
+To declare a variable that holds an array, we first write the type of data that will be stored in an array, then add the square brackets `[]` to signify that it is holding an array (rather than a single value), followed by the name of the array.
+
+Like a variable, we can define and initialize an array at the same time, by specifying the values we want to store in it:
+
+```c#
+int[] plantHeights = { 3, 4, 6 };
+```
+
+You may also see arrays defined and initialized using a `new` keyword:
+
+```c#
+int[] plantHeights = new int[] { 3, 4, 6 };
+```
+
+In fact, if you decide to define an array and then initialize it later (rather in one line like above) you **must** use the `new` keyword:
+
+```c#
+// Initial declaration
+int[] plantHeights;
+
+// This works
+plantHeights = new int[] { 3, 4, 6 };   
+
+// This will cause an error
+// plantHeights = { 3, 4, 6 }; 
+```
+
+### Array Length
+We often want to know how many items an array contains. We can do this with the [`.Length`](https://www.codecademy.com/resources/docs/c-sharp/arrays/length) property.
+
+```c#
+int[] plantHeights = { 3, 4, 6 };
+
+// arrayLength will be 3
+int arrayLength = plantHeights.Length 
+```
+
+### Accessing Array Items
+Arrays order items so that they’re in a specific sequence, which makes it helpful for accessing each item. Each value has a specific position in the array, which is known as its _index_. In C#, arrays start their index at 0 and then add one for each value.
+
+To access a value from a list, we write out the name of the array, followed by brackets `[]` and within the brackets, the index number of that value that we want:
+
+```c#
+int[] plantHeights = {3, 4, 6};
+
+// plantTwoHeight will be 4
+int plantTwoHeight = plantHeights[1];
+```
+
+### Editing Arrays
+
+
+
+
+
+
+
+
+
+
 
 ## Loops
 

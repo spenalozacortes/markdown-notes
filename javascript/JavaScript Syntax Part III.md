@@ -65,6 +65,7 @@ class Dog {
 ```
 
 ### Method Calls
+
 ```js
 class Dog {
   constructor(name) {

@@ -2769,7 +2769,7 @@ The resulting list of `2` member tuples are the combinations of all 3 members 
 ```
 
 ## Generators
-
+#project
 ### Introduction to Generators
 In Python, a _generator_ allows for the creation of [iterators](https://www.codecademy.com/resources/docs/python/iterators) without having to implement `__iter__()` and `__next__()` methods. [Generators](https://www.codecademy.com/resources/docs/python/generators) improve code readability, save memory by allowing for iterative access of elements, and allow for the traversal of infinite streams of data.
 
@@ -2948,7 +2948,6 @@ The updated line, `n = yield count`, has 2 behaviors:
 - At the end of each iteration, the value stored in `count` is returned by the generator.
 
 If `n is not None` the value stored in `n` can be assigned to the iterator variable, `count`. This allows the iterator to only change the value of `count` when the `.send()` method is called.
-#aqui 
 
 ```python
 MAX_STUDENTS = 50
@@ -3141,7 +3140,7 @@ for honor in honors:
 ```
 
 # Specialized Collections
-
+#project 
 ## Sets
 
 ### Introduction to Python Sets
@@ -3616,9 +3615,1039 @@ new_products_set = {'t-shirt', 'pants', 'blouse', 'dress'}
 updated_products = new_products_set | old_products_set
 removed_products = old_products_set - new_products_set
 ```
+ 
+### Introduction to Specialized Containers
+The [classes](https://www.codecademy.com/resources/docs/python/classes) from the `collections` module are very similar to the built-in containers we’ve been already using, but they contain new methods and utilities. Each of these specialized containers focuses on a certain improvement to its built-in counterpart such as optimizing performance, better organization, fewer steps for performing tasks, and more!
+
+In order to use classes from the `collections` module, we will first need to import the module into our code. This is different than the previous containers we’ve seen because they were built-in and did not require an import.
+
+```python
+# To import a single class or multiple classes
+from collections import name_of_class, name_of_another_class
+
+# To import all classes in the collections module
+from collections import *
+
+# Another way to import all classes in a module
+import collections
+```
+
+For a more specific example, here is what importing the `OrderedDict` (one of the specialized containers) would look like.
+
+```python
+from collections import OrderedDict
+
+orders = OrderedDict({'order_4829': {'type': 't-shirt', 'size': 'large', 'price': 9.99},
+          'order_6184': {'type': 'pants', 'size': 'medium', 'price': 14.99},
+          'order_2905': {'type': 'shoes', 'size': 12, 'price': 22.50}})
+
+orders.move_to_end('order_4829')
+orders.popitem()
+```
+
+#### Advanced Containers
+
+- `deque`
+- [`namedtuple`](https://www.codecademy.com/resources/docs/python/collections-module/namedtuple)
+- `Counter`
+- [`defaultdict`](https://www.codecademy.com/resources/docs/python/collections-module/defaultdict)
+- `OrderedDict`
+- `ChainMap`
+
+#### Container Wrappers
+
+- `UserDict`
+- `UserList`
+- `UserString`
+
+### Deque
+Let’s imagine a situation where we are processing a large document containing bug reports for an application. In order to prioritize the most important bugs, we want any normal bug reports to be appended to the end of the list and higher priority bugs to be at the front of the list (kind of like a priority list). As we fix the bugs, they can be removed from the front of the list.
+
+The program below is an example of what our implementation might look like using lists.
+
+```python
+bug_data = []
+
+loaded_bug_reports = get_all_bug_reports()
+
+for bug in loaded_bug_reports:
+    if bug['priority'] == 'high':
+        # A list uses the insert method to append to the front
+        bug_data.insert(0, bug)
+    else:
+        bug_data.append(bug)
+
+# A list must provide an index to pop
+next_bug_to_fix = bug_data.pop(0)
+```
+
+The problem with this implementation is that lists are not optimized for appending and popping large amounts of data, although they are great at accessing data at any index which you provide.
+
+To solve this problem, we can use `deque` containers. These are similar to lists, but they are optimized for appending and popping to the front and back, rather than having optimized accessing. Because of this, they are great for working with data where you don’t need to access elements in the middle very often or at all.
+
+```python
+from collections import deque
+
+bug_data = deque()
+
+loaded_bug_reports = get_all_bug_reports()
+
+for bug in loaded_bug_reports:
+    if bug['priority'] == 'high':
+        # With a deque, we can append to the front directly
+        bug_data.appendleft(bug)
+    else:
+        bug_data.append(bug)
+
+# With a deque, we can pop from the front directly
+next_bug_to_fix = bug_data.popleft()
+```
+
+More information about the `deque` container can be found in the [Python Documentation](https://docs.python.org/3/library/collections.html#collections.deque)
+
+### Named Tuple
+[Tuples](https://www.codecademy.com/resources/docs/python/tuples), another common built-in container, are very useful for grouping together data that does not need to be modified in the future. Tuples do however run into an issue when they host various data and even nested data.
+
+```python
+actor_data_tuple = ('Leonardo DiCaprio', 1974, 'Titanic', 1997)
+```
+
+While the tuple does a great job of creating a container that can keep ordered immutable data, it can become quite confusing to represent properties using numerical indices.
+
+```python
+actor_data_tuple[3]
+```
+
+Unless we explicitly define a variable name that describes what the third index represents, it’s very hard to tell what data we are talking about. We would also need to make separate [variables](https://www.codecademy.com/resources/docs/python/variables) for each property! Thanks to the `collections` module, we have a solution to this problem.
+
+The [`namedtuple`](https://www.codecademy.com/resources/docs/python/collections-module/namedtuple) collection allows us to have an immutable tuple object, but every element becomes self-documented.
+
+```python
+from collections import namedtuple
+
+# General Structure: namedtuple(typename, field_names, *, rename=False, defaults=None, module=None)
+
+ActorData = namedtuple('ActorData', ['name', 'birth_year', 'movie', 'movie_release_date'])
+```
+
+In this example, we are defining an instance of the `namedtuple` collection with a _typename_ called `'ActorData'` and a sequence of [strings](https://www.codecademy.com/resources/docs/python/strings) called _field_names_ that represent the labels for the data we want to store.
+
+We can then define an instance of our `ActorData`:
+
+```python
+actor_data = ActorData('Leonardo DiCaprio', 1974, 'Titanic', 1997)
+```
+
+This then allows us to access the mapped property value to its associated name from before using the `.` notation:
+
+```python
+print(actor_data.name)
+```
+
+Would return:
+
+```
+Leonardo DiCaprio
+```
+
+Some things to note about `namedtuples`:
+
+- You may have noticed we use a CapWords convention when defining our `namedtuple`. This is because `namedtuple` actually returns a _subclass_ and thus falls under the conventions we use for [classes](https://www.codecademy.com/resources/docs/python/classes).
+- The `field_names` argument can alternatively be a single string with each fieldname separated by whitespace and/or commas, for example, `'x y'` or `'x, y'`.
+- At first glance, `namedtuples` might seem like it is trying to replicate a dictionary. While the key idea of labeling properties is the same in both structures, `namedtuples` have some key advantages over a regular dictionary:
+    - They are immutable and maintain their order, while a dictionary does not.
+    - They are more lightweight than [dictionaries](https://www.codecademy.com/resources/docs/python/dictionaries) and take no more memory than a regular tuple.
+
+There are other useful methods that a `namedtuple` uses such as converting from a `namedtuple` to a `dict`, replacing elements and field names, and even setting default values for attributes. More information about `namedtuple` containers can be found in the [Python Documentation](https://docs.python.org/3/library/collections.html#collections.namedtuple).
+
+### DefaultDict
+[Dictionaries](https://www.codecademy.com/resources/docs/python/dictionaries) are another popular type of collection we use in our programs. Although they are great for a lot of situations, applications that rely heavily on them always run into a common issue. This issue deals with how to handle missing keys!
+
+When we try to access a key-value pair in a dictionary, but the key does not exist, a dictionary will normally throw a `KeyError`.
+
+```python
+prices = {'jeans': 19.99, 'shoes': 24.99, 't-shirt': 9.99, 'blouse': 19.99}
+
+print(prices['jacket'])
+```
+
+Would output:
+
+```
+KeyError: 'jacket'
+```
+
+One of the ways Python offers to deal with this issue is by having a default missing value in the dictionary, and this is exactly what the [`defaultdict`](https://www.codecademy.com/resources/docs/python/collections-module/defaultdict) collection does.
+
+First, we import the class and set the default value:
+
+```python
+from collections import defaultdict
+
+validate_prices = defaultdict(lambda: 'No Price Assigned')
+```
+
+Next, we can set the keys and values like a regular `dict`:
+
+```python
+validate_prices['jeans'] = 19.99
+validate_prices['shoes'] = 24.99
+validate_prices['t-shirt'] = 9.99
+validate_prices['blouse'] = 19.99
+```
+
+Finally, we access an invalid key to observe the result:
+
+```python
+print(validate_prices['jacket'])
+```
+
+Would output:
+
+```
+No Price Assigned
+```
+
+Notice the following:
+
+- We set the default value using a [lambda](https://www.codecademy.com/resources/docs/python/keywords/lambda) expression.
+- Any time we try to access a key that does not exist, it automatically updates our `defaultdict` object by creating the new key-value pair using the missing key and the default value.
+
+To read more about the `defaultdict` container, take a look at the [Python Documentation](https://docs.python.org/3/library/collections.html#collections.defaultdics)
+
+---
+
+Not only can we create a `defaultdict` from scratch, but we can also create one from an existing dictionary. To do this, we can use the `.update()` method from the `defaultdict` class. This behaves the same way as the `.update()` method from the `dict` class.
+
+### OrderedDict
+When keeping track of many different [dictionaries](https://www.codecademy.com/resources/docs/python/dictionaries) with the built-in Python containers, we could try storing dictionaries in a list, or even a dictionary of dictionaries. This may work in some cases, but there are a few problems which might come up.
+
+When storing dictionaries in a list, the order is preserved, but we have to access the elements by their index before we can access the dictionary:
+
+```python
+first_order = {'order_2905': {'type': 'shoes', 'size': 12, 'price': 22.50}}
+second_order = {'order_6184': {'type': 'pants', 'size': 'medium', 'price': 14.99}}
+third_order = {'order_4829': {'type': 't-shirt', 'size': 'large', 'price': 9.99}}
+
+list_of_dicts = [first_order, second_order, third_order]
+```
+
+In order to get the price of a specific order, we must know the index of it already before we can access the dictionary data stored inside:
+
+```python
+print(list_of_dicts[1]['order_6184']['price'])
+
+# Output
+# 14.99
+```
+
+On the other hand, depending on the Python version, the `dict` container can preserve the order, but it is difficult to move elements around:
+
+```python
+dict_of_dicts = {}
+dict_of_dicts.update(first_order)
+dict_of_dicts.update(second_order)
+dict_of_dicts.update(third_order)
+
+print(dict_of_dicts['order_6184']['price'])
+
+# Output
+# 14.99
+```
+
+Note: The `dict` class is unordered in earlier versions of python, so implementing it this way must have version 3.6 or greater.
+
+To solve these issues, we can use an `OrderedDict`!
+
+The `OrderedDict` container allows us to access values using keys, but it also preserves the order of the elements inside of it.
+
+Import and create an `OrderedDict`.
+
+```python
+from collections import OrderedDict
+
+orders = OrderedDict()
+```
+
+The order of the data is preserved when adding it to the `OrderedDict`:
+
+```python
+orders.update({'order_2905': {'type': 'shoes', 'size': 12, 'price': 22.50}})
+orders.update({'order_6184': {'type': 'pants', 'size': 'medium', 'price': 14.99}})
+orders.update({'order_4829': {'type': 't-shirt', 'size': 'large', 'price': 9.99}})
+```
+
+Data can be accessed using keys like a normal dictionary:
+
+```python
+# Get a specific order
+find_order = orders['order_2905']
+```
+
+The order can be retrieved by converting it to a list then accessing by index:
+
+```python
+# Get the data in a list format
+orders_list = list(orders.items())
+third_order = orders_list[2]
+```
+
+When using an `OrderedDict`, we are able to use its methods for moving the data around. We can move an element to the back or front and pop the data from the back or front of the `OrderedDict`:
+
+```python
+# Move an item to the end of the OrderedDict
+orders.move_to_end('order_4829')
+
+# Pop the last item in the dictionary
+last_order = orders.popitem()
+```
+
+Note: These two methods also accept boolean arguments which determine if the element is moved / popped from the front or back of the `OrderedDict`.
+
+For more information about the `OrderedDict` container, take a look at the [Python Documentation](https://docs.python.org/3/library/collections.html#collections.OrderedDict).
+
+### ChainMap
+The `ChainMap` container allows us to store many mappings in an ordered group, but lookups (accessing the value using a key) are repeated for every mapping inside of the `ChainMap` until something is found or the end is reached. If we try to modify the data in any way, then only the first mapping in the `ChainMap` will receive the changes. When accessing data, one way to think of the `ChainMap` is that it treats all of the stored dictionaries as one large dictionary, where if there are repeated keys, then the first found result is returned.
+
+```python
+from collections import ChainMap
+
+customer_info = {'name': 'Dmitri Buyer', 'age': '31', 'address': '123 Python Lane', 'phone_number': '5552930183'}
+
+shirt_dimensions = {'shoulder': 20, 'chest': 42, 'torso_length': 29}
+
+pants_dimensions = {'waist': 36, 'leg_length': 42.5, 'hip': 21.5, 'thigh': 25, 'bottom': 18}
+```
+
+Next, we initialize a `ChainMap` with the mappings which we want to use. In this case, the mappings are the dimensions dictionaries.
+
+```python
+customer_data = ChainMap(customer_info, shirt_dimensions, pants_dimensions)
+```
+
+Now we can access values from any of the stored mappings.
+
+```python
+customer_leg_length = customer_data['leg_length']
+```
+
+The parents property skips the first mapping and returns everything else (all of the parents of the first mapping).
+
+```python
+customer_size_data = customer_data.parents
+```
+
+We can directly modify the data only in the first dictionary.
+
+```python
+customer_data['address'] = '456 ChainMap Drive'
+```
+
+Note: In order to modify data from dictionaries which are deeper in the `ChainMap`, we will need to iterate through the dictionaries which are stored inside of it.
+
+Another interesting concept that the `ChainMap` uses is the concept of a parent mappings. If we use the `.parents` property, all mappings except the first one will be returned. This is because those mappings are considered to be the parent mappings to the first one. You can add a new “child” mapping to the front of the list of mappings using the `.new_child()` method.
+
+To find out more about this container, check out the [Python Documentation](https://docs.python.org/3/library/collections.html#collections.ChainMap).
+
+---
+
+Remember that a `ChainMap` accepts a variable number of arguments so we need to expand the list (`*`) so the constructor will read them as individual arguments instead of one single argument.
+
+### Counter
+One of the most common tasks we might have to do in a program is to count instances of an element in a collection.
+
+First, let’s define a list of items.
+
+```python
+clothes_list = ['skirt', 'hoodie', 'dress', 'blouse', 'jeans', 'shoes', 'skirt', 'skirt', 'jeans', 'hoodie', 'boots', 'jeans', 'jacket', 't-shirt', 'skirt', 'skirt', 'dress', 'shoes', 'blouse', 'hoodie', 'skirt', 'boots', 'shoes', 'boots', 'jeans', 'hoodie', 'blouse', 'hoodie', 'shoes', 'shoes', 'blouse', 'boots', 'blouse', 'hoodie', 't-shirt', 'jeans', 'dress', 'skirt', 'jacket', 'boots', 'skirt', 'dress', 'jeans', 'jeans', 'jacket', 'jeans', 'shoes', 'dress', 'hoodie', 'blouse']
+```
+
+If we wanted to create a representation of how many of each item exist in our collection, we could use a loop and a dictionary.
+
+```python
+counted_items = {}
+for item in clothes_list:
+   if item not in counted_items:
+       counted_items[item] = 1
+   else:
+       counted_items[item] += 1
+
+print(counted_items)
+```
+
+This would output (in no particular order):
+
+```
+{'skirt': 8, 'hoodie': 7, 'dress': 5, 'blouse': 6, 'jeans': 8, 'shoes': 6, 'boots': 5, 'jacket': 3, 't-shirt': 2}
+```
+
+The `Counter` container instantly counts elements for any hashable object. It stores the data as a dictionary where the keys are the elements and the values are the number of occurrences.
+
+```python
+from collections import Counter
+
+counted_items = Counter(clothes_list)
+print(counted_items)
+```
+
+Would Output:
+
+```
+Counter({'skirt': 8, 'jeans': 8, 'hoodie': 7, 'blouse': 6, 'shoes': 6, 'dress': 5, 'boots': 5, 'jacket': 3, 't-shirt': 2})
+```
+
+This allows us to create a much more elegant solution without many lines of code. Additionally, the `Counter` class has methods that provide further utility when working with our data. These methods include mathematical operations for subtracting one count dictionary from another, finding the most common elements, and even generating a new list of elements based on the number of occurrences.
+
+For more information about the `Counter` class, take a look at the [Python documentation](https://docs.python.org/3/library/collections.html#collections.Counter).
+
+---
+
+Luckily, the `Counter` container has a method that allows us to accomplish this really easily.
+
+Take a look at the Python documentation for the [.subtract()](https://docs.python.org/3/library/collections.html#collections.Counter.subtract) method.
+
+### Container Wrappers
+In Python, wrappers are modifications to [functions](https://www.codecademy.com/resources/docs/python/functions) or [classes](https://www.codecademy.com/resources/docs/python/classes) which change the behavior in some way. They are called wrappers because they “wrap” around the existing code to modify it. This is most commonly used with function wrapping, but we can also wrap classes.
+
+First, we need a class to wrap around.
+
+```python
+class Customer:
+
+  def __init__(self, name, age, address, phone_number):
+    self.name = name
+    self.age = age
+    self.address = address
+    self.phone_number = phone_number
+```
+
+Next, we create a wrapper class which stores an object of the class we are wrapping around. It also includes some additional functionality.
+
+```python
+class CustomerWrap(Customer):
+
+  def __init__(self, name, age, address, phone_number):
+    self.customer = Customer(name, age, address, phone_number)
+
+  def display_customer_info(self):
+    print('Name: ' + self.customer.name)
+    print('Age: ' + str(self.customer.age))
+    print('Address: ' + self.customer.address)
+    print('Phone Number: ' + self.customer.phone_number)
+```
+
+Finally, we can create an object from the wrapper class to access the new functionality and the wrapped class contained inside.
+
+```python
+customer = CustomerWrap('Dmitri Buyer', 38, '123 Python Avenue', '5557098603')
+customer.display_customer_info()
+
+# Output
+# Name: Dmitri Buyer
+# Age: 38
+# Address: 123 Python Avenue
+# Phone Number: 5557098603
+```
+
+Wrapper classes allow us to create different variations of classes with different purposes while avoiding duplicate code. Since we use an instance of the wrapped class inside of it, it preserves all of the attributes and methods from the wrapped class and keeps us from having to re-type all of the code.
+
+In the case of containers, the `collections` class has three different wrapper classes set up for us to modify! Because of this, we can refer to them as wrapper containers. The advanced containers which we have already been looking at are variations of the standard built-in containers, so using wrapper containers allows us to create our own versions as well.
+
+The three wrapper containers we will be looking at are:
+
+- `UserDict`
+- `UserList`
+- `UserString`
+
+### UserDict
+The `UserDict` container wrapper lets us create our own version of a dictionary. This class contains all of the functionality of a normal `dict`, except that we can access the dictionary data through the `data` property.
+
+```python
+from collections import UserDict
+
+# Create a class which inherits from the UserDict class
+class DisplayDict(UserDict):
+    # A new method to increase the dictionary's functionality
+    def display_info(self):
+        print("Number of Keys: " + str(len(self.keys())))
+        print("Keys: " + str(list(self.keys())))
+        print("Number of Values: " + str(len(self.values())))
+        print("Values: " + str(list(self.values())))
+
+    # We can also overwrite a method from the dictionary class
+    def clear(self):
+        print("Deleting all items from the dictionary!")
+        super().clear()
+
+disp_dict = DisplayDict({'user': 'Mark', 'device': 'desktop', 'num_visits': 37})
+
+disp_dict.display_info()
+
+disp_dict.clear()
+
+```
+
+As shown in this code example, we can add additional methods and overwrite methods from the `UserDict` class. This is the same as inheriting from regular [classes](https://www.codecademy.com/resources/docs/python/classes) in Python.
+
+```python
+class OrderProcessingDict(UserDict):
+  def clean_orders(self):
+    to_delete = []
+    for key, val in self.data.items():
+      if val['order_status'] == 'complete':
+        to_delete.append(key)
+
+    for key in to_delete:
+      del self.data[key]
+```
+
+### UserList
+Not only can we create our own version of a dictionary, the `UserList` wrapper container lets us create our own `list` as well! This class contains all of the functionality of a regular `list`, but it also has a property called `data` which allows us to access the list contents directly.
+
+```python
+from collections import UserList
+
+# Create a class which inherits from the UserList class
+class CondenseList(UserList):
+
+    # A new method to remove duplicate items from the list
+    def condense(self):
+        self.data = list(set(self.data))
+        print(self.data)
 
 
+    # We can also overwrite a method from the list class
+    def clear(self):
+        print("Deleting all items from the list!")
+        super().clear()
+
+condense_list = CondenseList(['t-shirt', 'jeans', 'jeans', 't-shirt', 'shoes'])
+
+condense_list.condense()
+
+condense_list.clear()
+```
+
+As shown in this code example, we can add additional methods and overwrite methods from the `UserList` class. This is the same as inheriting from regular [classes](https://www.codecademy.com/resources/docs/python/classes) in Python.
+
+```python
+class ListSorter(UserList):
+  def append(self, item):
+    self.data.append(item)
+    self.data.sort()
+```
+
+### UserString
+Since [strings](https://www.codecademy.com/resources/docs/python/strings) are also considered containers, the `collections` module also provides a container wrapper for the string class. This contains all of the functionality of a regular string, but it includes the string’s data inside of a property called `data`.
+
+```python
+from collections import UserString
+
+# Create a class which inherits from the UserString class
+class IntenseString(UserString):
+
+    # A new method to capitalize and add exclamation points to our string
+    def exclaim(self):
+        self.data = self.data.upper() + '!!!'
+        return self.data
+
+
+    # Overwrite the count method to only count a certain letter
+    def count(self, sub=None, start=0, end=0):
+        num = 0
+        for let in self.data:
+            if let == 'P':
+                num+=1
+        return num
+
+
+intense_string = IntenseString("python rules")
+
+print(intense_string.exclaim())
+print(intense_string.count())
+```
+
+This shows how we can add additional methods to the original container’s class or even overwrite existing methods. This is the same as inheriting from regular [classes](https://www.codecademy.com/resources/docs/python/classes) in Python.
+
+```python
+class SubtractString(UserString):
+  def __sub__(self, str):
+    if str in self.data:
+      self.data = self.data.replace(str, '')
+
+subtract_string = SubtractString(str_name)
+subtract_string - str_word
+print(subtract_string)
+```
+
+### Review
+
+- `deque`
+    - An advanced container which is optimized for appending and popping items from the front and back. For accessing many elements positioned elsewhere, it is better to use a `list`.
+- [`namedtuple`](https://www.codecademy.com/resources/docs/python/collections-module/namedtuple)
+    - The `namedtuple` lets us create an immutable data structure similar to a `tuple`, but we don’t have to access the stored data using indices. Instead, we can create instances of our `namedtuple` with named attributes. We can then use the `.` operator to retrieve data by the attribute names.
+- `Counter`
+    - This advanced container automatically counts the data within a hashable object which we pass into it’s constructor. It stores it as a dictionary where the keys are the elements and the values are the number of occurrences.
+- [`defaultdict`](https://www.codecademy.com/resources/docs/python/collections-module/defaultdict)
+    - An advanced container which behaves like a regular dictionary, except that it does not throw an error when trying to access a key which does not exist. Instead, it creates a new `key:value` pair where the value defaults to what we provide in the constructor for the `defaultdict`.
+- `OrderedDict`
+    - The `OrderedDict` combines the functionality of a `list` and a `dict` by preserving the order of elements, but also allowing us to access values using keys without having to provide an index for the position of stored [dictionaries](https://www.codecademy.com/resources/docs/python/dictionaries).
+- `ChainMap`
+    - This interesting container combines multiple mappings into a single container. When accessing a value using a key, it will search through every mapping contained within until a match is found or the end is reached. It also provides some useful methods for grouping parent and child mappings.
+- `UserDict`
+    - This is a container wrapper which lets us create our own version of a dictionary
+- `UserList`
+    - This is a container wrapper which lets us create our own version of a list
+- `UserString`
+    - This is a container wrapper which lets us create our own version of a string
+
+```python
+from collections import *
+
+overstock_items = [['shirt_103985', 15.99],
+                    ['pants_906841', 19.99],
+                    ['pants_765321', 15.99],
+                    ['shoes_948059', 29.99],
+                    ['shoes_356864', 9.99],
+                    ['shirt_865327', 10.99],
+                    ['shorts_086853', 9.99],
+                    ['pants_267953', 21.99],
+                    ['dress_976264', 32.99],
+                    ['shoes_135786', 17.99],
+                    ['skirt_196543', 12.99],
+                    ['jacket_976535', 26.99],
+                    ['pants_086367', 30.99],
+                    ['dress_357896', 29.99],
+                    ['shoes_157895', 14.99]]
+
+split_prices = deque()
+
+for item in overstock_items:
+  if item[1] > 20.0:
+    split_prices.appendleft(item)
+  else:
+    split_prices.append(item)
+print(split_prices)
+
+ClothesBundle = namedtuple('ClothesBundle', ['bundle_items', 'bundle_price'])
+
+bundles = []
+while len(split_prices) >= 5:
+  bundle_list = [split_prices.pop(), split_prices.pop(), split_prices.pop(), split_prices.popleft(),split_prices.popleft()]
+
+  calc_price = sum(b[1] for b in bundle_list)
+  bundles.append(ClothesBundle(bundle_list, calc_price))
+
+promoted_bundles = []
+for bundle in bundles:
+  if bundle.bundle_price > 100:
+    promoted_bundles.append(bundle)
+
+print(promoted_bundles)
+print(bundle)    
+```
 
 # Resource Management
 
 ## Context Managers
+
+### Introduction to Resource Management
+For computers, the resources we manage usually come in the form of memory, storage, or power. Since all resources are limited, if they are not managed well, it can lead to the computer running out of memory, space, and even cause crashes. So how do we manage these resources? Well, one of the easiest ways (and one we already started to explore) is through the use of _context managers_.
+
+A context manager is an object that takes care of the assigning and releasing of resources (files, database connections, etc). Learning to properly use context managers will give our software benefits such as:
+
+- Preventing resource leaks
+- Preventing crashes
+- Decreasing the vulnerability of our data
+- Preventing program slow-down.
+
+### A Familiar Face: The with Statement
+One of the most common ways to manage resources in Python is to make sure the [files](https://www.codecademy.com/resources/docs/python/files) we use in our scripts are properly closed after use.
+
+We already explored this concept when we used the `with` statement when operating on files. The `with` statement is the most common and pythonic way of invoking context managers in python.
+
+```python
+with open("file_name.txt", "w") as file:
+   file.write("How you gonna win when you ain't right within?")
+```
+
+1. The `with` statement calls the built-in [`open()`](https://www.codecademy.com/resources/docs/python/built-in-functions/open) function on `"file_name.txt"` with a mode of `"w"` which represents write mode.
+2. The `as` clause assigns the object opened (the file) to a target variable called `file`, which can be accessed inside of the context manager.
+3. `file.write()` writes a sentence to `"file_name.txt"`
+
+Here is what the same code would look like without the use of a context manager like `with`:
+
+```python
+file = open("file_name.txt", "w")
+try:
+   file.write("How you gonna win when you ain't right within?")
+finally:
+   file.close()
+```
+
+By using the `with` statement in the first example, it serves as a context manager where files are automatically closed after script completion and we don’t ever have to worry about the possibility of forgetting to close a resource. Remember, leaving our resources open will hog up our finite computer resources. We are never guaranteed that Python will close the file for us if we happen to forget to do it!
+
+### Class Based Context Managers
+One of the two approaches of creating context managers is referred to as the _class-based approach_. The class-based approach of writing context managers requires explicitly defining and implementing the following two methods inside of a class:
+
+- An `__enter__` method
+    
+    - The `__enter__` method allows for the setup of context managers. This method commonly takes care of opening resources (like files). This method also begins what is known as the _runtime context_ - the period of time in which a script runs. In our previous examples, it was the time in which the code passed into the `with` statement code block was executed (basically everything under the `with` statement).
+- An `__exit__` method
+    
+    - The `__exit__` ensures the breakdown of the context manager. This method commonly takes care of closing open resources that are no longer in use.
+
+```python
+class ContextManager:
+  def __init__(self):
+    print('Initializing class...')
+ 
+  def __enter__(self):
+    print('Entering context...')
+ 
+  def __exit__(self, *exc):
+    print('Exiting context...')
+```
+
+By defining these two methods, we are implementing the _context management protocol_ - a guideline for the required methods for a context manager.
+
+Implementing the context management protocol allows us to immediately invoke the class using the `with` statement as shown below:
+
+```python
+with ContextManager() as cm:
+  print('Code inside with statement')
+```
+
+After running the code, our output of this context manager would be:
+
+```
+Initializing class...
+Entering context...
+Code inside with statement
+Exiting context...
+```
+
+The above shows that our context manager class is executed in the following sequence:
+
+1. `__init__` method
+2. `__enter__` method
+3. The code in the `with` statement block
+4. `__exit__` method
+
+```python
+class WorkWithFile:
+  def __init__(self, file, mode):
+    self.file = file
+    self.mode = mode
+ 
+  def __enter__(self):
+    self.opened_file = open(self.file, self.mode)
+    return self.opened_file
+ 
+  def __exit__(self, *exc):
+    self.opened_file.close()
+```
+
+The `__init__` method:
+
+This method is standard across most classes, even ones that are not context managers themselves. In this case, we have three parameters:
+
+- `self`: This is standard for any class we work with and allows us to work with methods and properties we assign to an instance of a class.
+- `file`: Since we are working with files, we need to be able to take in a file argument when we call the class with a `with` statement.
+- `mode`: Lastly, we need to provide the file a mode. This allows us to manage what our context manager will actually be doing, such as reading, writing, or both!
+
+Both `file` and `mode` arguments allow us to accomplish the following syntax:
+
+```python
+with WorkWithFile('file.txt', 'r')
+```
+
+The `__enter__` method:
+
+This is where we deal with opening the file we want to work on. Since any new instance of our context manager will have a `file` and `mode` property, we can pass them into the `open()` function to open a specific file with a specific mode. Then, we save it as a variable called `self.opened_file,` and return it.
+
+By returning `self.opened_file`, the file will be passed into the variable we define when we call it with the `with` statement. So for example:
+
+```python
+with WorkWithFile('file.txt', 'r') as file
+```
+
+Will assign the open file `'file.txt'` to the variable called `file` that follows the `as` clause and thus allowing us to use it in the `with` statement code block.
+
+- The `__exit__` method:
+    
+    Lastly, but one of the most important steps, we have to close the file we work on. Here we are still taking in a `*exc` argument, but we won’t touch on that until the next exercise. For now, this method is solely responsible for closing the resource we opened in `__enter__`.
+
+Now that we created our context manager, we can now use it in a `with` statement like so:
+
+```python
+with WorkWithFile("file.txt", "r") as file:
+  print(file.read())
+```
+
+### Handling Exceptions
+Context managers play an important role in handling exceptions. Recall exceptions are [errors](https://www.codecademy.com/resources/docs/python/errors) that happen within the runtime of a code, terminating it before its completion. Within a context manager, the `__exit__` method is responsible for dealing with any exceptions. It can implement how to close the file and any other operations we want to perform if an exception occurs.
+
+The `__exit__` method needs four total arguments! In the past exercises, we ignored this requirement by using the `*` operator to tell the method we will pass a variable number of arguments even though we never did.
+
+The `__exit__` method has three required arguments (in addition to `self`):
+
+1. An exception type: which indicates the class of exception (i.e. `AttributeError` class, or `NameError` class)
+2. An exception value: the actual value of the error
+3. A traceback: a report detailing the sequence of steps that caused the error and all the details needed to fix the error.
+
+```python
+class OpenFile:
+ 
+ def __init__(self, file, mode):
+   self.file = file
+   self.mode = mode
+
+ def __enter__(self):
+   self.opened_file = open(self.file, self.mode)
+   return self.opened_file
+ 
+ def __exit__(self, exc_type, exc_val, traceback):
+   print(exc_type)
+   print(exc_val)
+   print(traceback)
+   self.opened_file.close()
+```
+
+We can see the outcome of our simple exception handling when we run our `with` statement with an intentional failure:
+
+```python
+with OpenFile("file.txt", "r") as file:
+  # .see() is not a real method
+  print(file.see())
+```
+
+Would output:
+
+```
+<class 'AttributeError'>
+'_io.TextIOWrapper' object has no attribute 'see'
+<traceback object at 0x7f08dcfb5040>
+
+Traceback (most recent call last): File "script.py", line 14, in <module> print(file.see()) AttributeError: '_io.TextIOWrapper' object has no attribute 'see'
+```
+
+When an error occurs, the code stops, and resources (i.e., file in our earlier example) are still closed. The values of these three arguments are then thrown or suppressed.
+
+In contrast, if no error occurs in the `with` statement above, the `__exit__` method would have printed:
+
+```
+None
+None
+None
+```
+
+Note that `exc_type`, `exc_value`, and `traceback` are completely arbitrary names. We can use any name we want for these parameters as long as it does not hinder the readability of our code.
+
+Printing exceptions isn’t the only way we can handle them in the `__exit__` method. An exception that occurs in a context manager can be handled in two ways:
+
+- If we want to throw an error when an error occurs, we can either:
+    - Return `False` after the [`.close()`](https://www.codecademy.com/resources/docs/python/files/close) method
+    - Do nothing
+- If we want to suppress the error, we can:
+    - Return `True` after the `.close()` method
+
+```python
+class OpenFile:
+ 
+  def __init__(self, file, mode):
+    self.file = file
+    self.mode = mode
+ 
+  def __enter__(self):
+    self.opened_file = open(self.file, self.mode)
+    return self.opened_file
+ 
+  def __exit__(self, exc_type, exc_val, traceback):
+    print(exc_type, exc_val, traceback)
+    print("The exception has been handled")
+    self.opened_file.close()
+    return True
+
+with OpenFile("file.txt", "r") as file:
+  # .see() is not a real method
+  print(file.see())
+
+with OpenFile("file.txt", "r") as file:
+  print(file.read())
+```
+
+When we run this code, our output is as follows:
+
+```
+<class 'AttributeError'> '_io.TextIOWrapper' object has no attribute 'see' <traceback object at 0x7fedf822d180>
+
+The exception has been handled
+
+None None None
+```
+
+- The error message we manually coded is printed but there is no automatic error message thrown by the program.
+- Both `with` statements ran.
+
+If we did not return `True`, the second (and all proceeding) `with` statements would not have run since an exception would be hit.
+
+Additionally, we can choose to handle a specific exception, while also suppressing it! This is useful if we want our context manager to not block the execution of other code, but also customize the output if a certain exception occurs. Here is an example of working with a `TypeError`:
+
+```python
+class OpenFile:
+ 
+  def __init__(self, file, mode):
+    self.file = file
+    self.mode = mode
+ 
+  def __enter__(self):
+    self.opened_file = open(self.file, self.mode)
+    return self.opened_file
+ 
+  def __exit__(self, exc_type, exc_val, traceback):
+    self.file.close()
+    if isinstance(exc_val, TypeError):
+      # Handle TypeError here...
+      print("The exception has been handled")
+      return True
+```
+
+Notice the `if` statement that compares `exc_val` to a specific exception we are trying to catch. Anything we want to happen for this specific exception can occur in the conditional code block. Lastly, we return `True` to make sure we suppress the exception from arising and stopping the rest of our code from running.
+
+**NOTE**: Remember that the `__exit__()` method’s primary responsibility is to close the resource the context manager is working with. In this example, we close the file first, before handling the error, so that it will always execute.
+
+### Introduction to Contextlib
+We’ve learned that we can create our own context managers using the class-based method, but there’s an even simpler way of creating context managers. We can use a built-in Python module called `contextlib`!
+
+The `contextlib` module allows for the creation of a context manager with the use of a generator function (a function that uses `yield` instead of `return`) and the contextlib decorator - `@contextmanager`. Instead of creating a class and definining `__enter__` and `__exit__` methods, we can use a simple function!
+
+First, we will need to import the built-in module into our script and grab the `@contextmanager` decorator:
+
+```python
+from contextlib import contextmanager
+```
+
+Once we have successfully imported the module, we can automatically use the `@contextmanager` decorator to wrap a simple generator function:
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def open_file_contextlib(file, mode):
+  opened_file = open(file, mode)
+ try:
+   yield opened_file
+ finally:
+   opened_file.close()
+```
+
+1. We have written a generator function called `open_file_contextlib` with the expectation that it will take in two arguments, a file and a mode.
+2. We then use the built-in [`open()`](https://www.codecademy.com/resources/docs/python/built-in-functions/open) function to open the file (that we received as an argument) and save it to a variable called `opened_file`.
+3. The function then will attempt (via a `try` statement) to `yield` the opened file and complete whatever code we pass when we use it in conjunction with the `with` statement.
+4. Lastly the resource (file) will be closed once all the code is done being executed.
+
+If we think about this structure in sections relative to the class-based approach, it essentially breaks down into this:
+
+```
+@contextmanager
+def generator_function(<parameters>):
+    <setup section - equivalent to __enter__ >
+    try:
+        yield <value>
+    finally:
+        <cleanup section - equivalent to __exit__ >
+```
+
+Once we have created this function and denoted it as a context manager using the `@contextmanager` decorator, we can immediately use it like before in a `with` statement:
+
+```python
+with open_file_contextlib('file.txt', 'w') as opened_file:
+ opened_file.write('We just made a context manager using contexlib')
+```
+
+Following this pattern of creating context managers allows us to quickly convert generator [functions](https://www.codecademy.com/resources/docs/python/functions) to become context managers without the need to create any extra [classes](https://www.codecademy.com/resources/docs/python/classes).
+
+### Contextlib Error Handling
+Like any other pattern, you may run into errors when invoking your context manager using the `@contextmanager` decorator.
+
+For the class-based context manager, the `__exit__` method dealt with exceptions. For the decorator method, errors are most commonly dealt with within an `except` block. There are two main ways to deal with errors:
+
+- To throw an error and stop the execution of our entire program, we can:
+    - Simply do nothing by excluding an `except` block
+- To catch errors and continue the execution of our program, we can:
+    - Handle the exception via an `except` block.
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def open_file_contextlib(file, mode):
+  open_file = open(file, mode)
+ 
+try:
+   yield open_file
+ 
+ # Exception Handling
+ except Exception as exception:
+   print('We hit an error: ' + str(exception))
+ 
+ finally:
+   open_file.close()
+ 
+with open_file_contextlib('file.txt', 'w') as opened_file:
+ opened_file.sign('We just made a context manager using contexlib')
+```
+
+### Nested Context Managers
+In most programs, there might be a need to use context managers for a couple of different scenarios that include working with multiple files! For example, we might want to:
+
+- Work with information from multiple [files](https://www.codecademy.com/resources/docs/python/files).
+- Copy the same information to multiple files.
+- Copy information from one file to another.
+
+To accomplish this goal of working with multiple resources at once, context managers can be nested together in a `with` statement to manage multiple resources simultaneously.
+
+Let’s imagine we have two files: a `teacher.txt` file and a `student.txt`. We want to copy all the information on the student file to the teachers.
+
+```python
+with open('teacher.txt', 'w') as teacher, open('student.txt', 'r') as student:
+ teacher.write(student.read())
+```
+
+- The `with` statement is being called once but invoking two context managers. This is a single-line nested `with` statement.
+- Each context manager is separated by a comma and has its own target variable.
+- Here we have chosen to use the [`open()`](https://www.codecademy.com/resources/docs/python/built-in-functions/open) built-in function rather than a custom context manager. It is entirely possible to use our own in place of the `open()` function.
+
+We can also write the above `nested` context managers in a slightly different way:
+
+```python
+with open("teacher.txt", "w") as teacher:
+   with open("student.txt", "r") as student:
+     teacher.write(student.read())
+```
+
+- The `with` statement is being called twice
+- This method, though slightly longer gives a clearer visual of `nesting` and is preferable when working with more than two context managers.
+
+### Review
+
+**Context Managers:**
+
+- Context managers are a form of resource management in python invoked by the `with` statement.
+- They ensure that resources are closed/released after usage regardless of whether or not an error occurs.
+- They can be created from scratch using either the class-based method or the `contextlib` decorator-based method.
+- Behind every context manager, there’s an `__enter__` and `__exit__` method taking place.
+- Context managers can be nested together to work with resources simultaneously.
+
+**Class-Based Context Managers**
+
+- They can be created from scratch with the manual implementation of the `__enter__` and `__exit__` method.
+- The `__exit__` method takes three arguments: An exception type, exception value, and a traceback. The method can then handle exceptions.
+
+**Decorator Based Context Managers**
+
+- They can be created from scratch using the `contextlib` contextmanager decorator on a generator function
+- In the `contextlib` method, the `except` block handles exception’s code block
+
+To explore context managers further check out the [Python Documentation](https://docs.python.org/3/library/contextlib.html#module-contextlib).
