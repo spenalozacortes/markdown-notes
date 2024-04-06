@@ -1,7 +1,7 @@
 # Types
 
 ## Types
-#aqui
+
 ### From JavaScript to TypeScript
 Invented in 1995, JavaScript was designed as a small scripting language for simple web pages in browsers. It wasn’t until 1999 that JavaScript was capable of supporting the kinds of dynamic web pages we see today, and using JavaScript that way wasn’t common practice until 2005.
 
@@ -244,15 +244,123 @@ function greet(name?: string) {
 
 greet(); // Prints: Hello, Anonymous!
 ```
+ 
+### Default Parameters
+If a parameter is assigned a default value, TypeScript will infer the variable type to be the same as the default value’s type. (This is similar to how TypeScript infers the type of an initialized variable to be the same as the type of its initial value.)
 
+```ts
+function greet(name = 'Anonymous') {
+  console.log(`Hello, ${name}!`);
+}
+```
 
+The function `greet()` can receive a `string` or `undefined` as its `name` parameter—if any other type is provided as an argument, TypeScript will consider that a type error.
 
+### Inferring Return Types
+TypeScript can also infer the types of values returned by [functions](https://www.codecademy.com/resources/docs/typescript/functions). It does this by looking at the types of the values after a function’s `return` statements.
 
+```ts
+function createGreeting(name: string) {
+  return `Hello, ${name}!`;
+}
 
+const myGreeting = createGreeting('Aisle Nevertell');
+```
+
+### Explicit Return Types
+If we’d like to be explicit about what type a function returns, we can add an explicit type annotation after its closing parenthesis. Here, we use the same syntax as other [type annotations](https://www.codecademy.com/resources/docs/typescript/type-annotations), a colon followed by the type. TypeScript will produce an error for any return statement in that function that doesn’t return the right type of value.
+
+```ts
+function createGreeting(name?: string): string {
+  if (name) {
+    return `Hello, ${name}!`;
+  }
+
+  return undefined;
+  // Typescript Error: Type 'undefined' is not assignable to type 'string'.
+};
+```
+
+We can also explicitly state return types for arrow [functions](https://www.codecademy.com/resources/docs/typescript/functions) (which were defined in the ES6/ES2015 version of JavaScript). We’ll see the same kinds of error messages for both function types.
+
+```ts
+const createArrowGreeting = (name?: string): string => {
+  if (name) {
+    return `Hello, ${name}!`;
+  }
+
+  return undefined;
+  // Typescript Error: Type 'undefined' is not assignable to type 'string'.
+};
+```
+
+### Void Return Type
+It is often preferred to use type annotations for [functions](https://www.codecademy.com/resources/docs/typescript/functions), even when those functions don’t return anything.
+
+```ts
+function logGreeting(name: string){
+  console.log(`Hello, ${name}!`)
+}
+```
+
+The function `logGreeting()` simply logs a greeting to the console. There is no returned value, so we must treat the return type as `void`.
+
+```ts
+function logGreeting(name:string): void{
+  console.log(`Hello, ${name}!`)
+}
+```
+
+### Documenting Functions
+TypeScript recognizes JavaScript comment syntax:
+
+```ts
+// This is a single line comment 
+
+/*
+This is a 
+multiline
+comment
+*/
+```
+
+But it’s common in TypeScript to see a third comment style: documentation comments. A documentation comment is denoted with the first line `/**` and a final line `*/`. It’s common for each line within the comment to start with an asterisk (`*`):
+
+```ts
+/**
+* This is a documentation comment
+*/
+```
+
+Documentation comments are especially useful for documenting [functions](https://www.codecademy.com/resources/docs/typescript/functions). We place a function’s documentation comment in the code directly above the function declaration. We can use special tags within the comment to highlight certain aspects of the function. We can use `@param` to describe each of the function’s parameters, and we can use `@returns` to describe what the function returns:
+
+```ts
+  /**
+   * Returns the sum of two numbers.
+   *
+   * @param x - The first input number
+   * @param y - The second input number
+   * @returns The sum of `x` and `y`
+   *
+   */
+  function getSum(x: number, y: number): number {
+    return x + y;
+  }
+}
+```
+
+Many text editors will helpfully display documentation comments, for example, when hovering over a function name.
+#aqui 
 
 # Complex Types
 
 ## Arrays
+
+### Introduction
+Typing [arrays](https://www.codecademy.com/resources/docs/typescript/arrays) is a little bit different than working with primitive types. This is because arrays usually contain many pieces of data. Keeping track of the array’s type means keeping track of every element’s type.
+
+
+
 
 ## Custom Types
 

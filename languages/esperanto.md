@@ -2193,4 +2193,73 @@ It's also possible to use an adjective ending:Ni devis almeti la **anstataŭan*
 Krome (except) and kroma (additional, other) always have a meaning of addition, never of exception.
 
 ### Po
+The particle po shows distribution of quantities. It is traditionally classified as a preposition, but many use it as a particle with adverbial qualities.
 
+Po has meaning only in relation to a number or quantity. Therefore, after po there must always be a number word or an expression of quantity: po kvin (by/at a rate of five), po dek (by/at a rate of ten), po dudek mil (by/at a rate of twenty thousand), po multe (by/at a rate of many), po kiom (by/at a rate of how many), po miliono (by/at a rate of a million), po duono (by/at a rate of half), po iom (by/at a rate of a few), po pluraj (by/at a rate of several), po paro (by/at a rate of a pair), po egalaj partoj (by/at a rate of equal parts), and so forth. Sometimes the quantity is understood through context: po pomo = po unu pomo (by/at a rate of \[one/an] apple), po tutaj boteloj = po pluraj tutaj boteloj (by/at a rate of \[several] whole bottles).
+
+Po shows a portion of something, which is somehow distributed among several people, several things, several locations, or a similar situation. One portion belongs to each of the various things. To determine the whole quantity, the whole number, the po quantity should be multiplied by a number. This number depends on the context:
+
+- Por miaj kvar infanoj mi aĉetis dek du pomojn, kaj al ĉiu el la infanoj mi donis **po tri** pomoj. - For my four children I bought twelve apples, and to each one of the children I gave three apples.
+    
+    3 apples times 4 = 12 apples. Note, that the result shows **apples**, not children. We multiplied 3 apples by the number of the children, but the result is definitely 12 apples, not 12 children. The result of this calculation always relates to whatever is indicated by the po expression.
+- Tie estis viro tre altkreska, kiu havis sur la manoj kaj sur la piedoj **po ses** fingroj, sume dudek kvar. - The very tall man who was there had, on his hands and on his feet, six fingers each, a total of twenty-four.
+    
+    6 fingers times 4 (2 hands + 2 feet) = 24 fingers.
+- Tiu ĉi libro havas sesdek paĝojn; tial, se mi legos en ĉiu tago **po dek kvin** paĝoj, mi finos la tutan libron en kvar tagoj. - This book has sixty pages; that's why, if I read at a rate of 15 pages in each day, I will finish the whole book in four days.
+    
+    15 pages times 4 = 60 pages.
+- Ŝi ricevis lecionojn **po dek** eŭroj por horo. - She received lessons at the rate of ten euros per hour.
+    
+    If the lessons lasted a total of, for example, 4 hours, the cost was: 10 euros times 4 = 40 euros.
+- Dume la gastoj trinkis **po** glaseto da vino. - In the meantime, the guests drank a glass of wine each.
+    
+    Here, the word unu (one) is understood through context: ...**po unu** glaseto... (at a rate of one small glass). If there were, for example, 10 guests, there were a total of 10 glasses as well.
+- Dume la gastoj trinkis **po** glaseto da vino. - In the meantime, the guests drank a glass of wine each.
+    
+    Here, the word unu (one) is understood through context: ...**po unu** glaseto... (at a rate of one small glass). If there were, for example, 10 guests, there were a total of 10 glasses as well.
+- El ĉiuj vivaĵoj, el ĉiu karno, enkonduku **po unu paro** el ĉiuj en la arkeon, ke ili restu vivaj kun vi. - From all living things, from all flesh, lead one pair of each into the ark, that they stay alive with you.
+    
+    If there were, for example, 1000 types of animals, there would be 2 animals (one pair) times 1000 = 2000 animals (1000 pairs).
+- La urbestro aranĝas grandajn tagmanĝojn, kie la vino estas trinkata **po tutaj boteloj**. = ...po pluraj tutaj boteloj. - The mayor arranged large meals, where the wine was drunk by the bottle. = ...at the rate of many whole bottles.
+    
+    In every lunch, many complete bottles are drunk.
+
+In the preceding examples, po is used as a preposition. In the [explanations on the nuances of numbers](https://lernu.net/gramatiko/nombraj_vortoj#nuanciloj), there are examples in which po is used like an adverb.
+
+#### Incorrect use of po
+Po is often put before the wrong kind of expression. Here is a typical example:
+
+- Tiu ĉi ŝtofo kostas dek dolarojn **po** metro.  
+    The speaker intends to say that ever ymetre of the cloth costs ten dollars, but that is incorrect. Here, po must relate to the word unu → po unu metro, understood through context. Therefore, the calculation becomes: 1 metre times 10 (the number of dollars) = 10 **metres**. In the sentence, po also appears before the expression (unu) metro ([one] metre). The result of the calculation is therefore ten metres, not ten dollars. Those ten metres of cloth cost one dollar. That was probably not the intended meaning.
+
+A correct usage is:
+
+- Tiu ĉi ŝtofo kostas **po dek** dolarojn **por** metro. - This material costs ten dolars a meter.
+    
+    If there is for example 5 meters, the calculation becomes: 10 dolors times 5 = 50 dollars. Now, the result shows dollars, because po (at the rate of) stands before the words dek dolaroj (ten dollars).
+
+In these sorts of sentences, many languages use only one word to express distribution. This word is placed before metro (metre). Some people confuse po with these words, which have a completely different meaning than po. In Esperanto, these meanings are expressed with two words -- po (at a rate of) and one other. The other word is often por (for), but depending on the context, other prepositions (or an adverbial form) may be used. In the preceding example, the expressions laŭ metro or metre would also be possible.
+
+Also note the differences between the following sentences:
+
+- La aŭto veturis **po dek** kilometrojn en kvin horoj. - The car drove at a rate of ten kilometers an hour for five hours.
+    
+    The car drove a total of 5 hours, and it drove a total of 50 kilometers. (10 kilometers times 5 = 50 kilometers.)
+    
+- La aŭto veturis dek kilometrojn en **po kvin** horoj. - The car drove ten kilometers at a rate of five hours a kilometer.
+    
+    The car drove a total of 10 kilometers, and that lasted a total of 50 hours (5 hours times 10 = 50 hours).
+
+#### Formulas with a fractional hyphen
+
+|Formula|Pronunciation|
+|---|---|
+|20$/kg|**po** dudek dolaroj **por** kilogramo|
+|120 km/h|**po** cent dudek kilometroj **en**/**por** horo|
+|2 MN/m²|**po** du meganeŭtonoj **sur**/**por** kvadratmetro|
+
+The word po is also often used together with an adverb: **po** 120 kilometroj **hore**.
+
+Po can sometimes be left out in this type of expression, with an addition of ĉiu (every) as necessary, for example: cent dudek kilometroj por/en (ĉiu) horo (120 kilometres per hour), dudek dolaroj por (ĉiu) kilogramo (20 dollars per kilogram), du meganeŭtonoj por/sur (ĉiu) kvadratmetro (2 meganewtons per square metre).
+
+# Table words (Correlatives)

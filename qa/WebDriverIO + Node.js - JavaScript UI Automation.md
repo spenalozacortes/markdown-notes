@@ -1,4 +1,4 @@
-# Introduction
+ess# Introduction
 
 ## Introduction to WebDriverIO
 
@@ -574,7 +574,7 @@ describe("Ecommerce Application", async () => {
     });
 });
 ```
-#aqui 
+ 
 ## Updating end to end test with page object pattern mechanism
 
 ```js
@@ -888,6 +888,10 @@ it("Login fail page-Smoke", async function() {
     "wdio": "wdio run ./wdio.conf.js",
     "debitcard": "npx wdio run wdio.conf.js --suite debitCard"
   },
+```
+
+```shell
+npm run debitcard
 ```
 
 ## Generating HTML reports through Allure package from WebDriverIO
